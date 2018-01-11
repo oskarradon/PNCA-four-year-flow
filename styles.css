@@ -1,7 +1,27 @@
+/* FONTS */
+
+@font-face {
+  font-family: "DIN Next LT Pro";
+  font-weight: lighter;
+  src: url("assets/fonts/DINNextLTPro-Light.otf") format("otf");
+}
+
+@font-face {
+  font-family: "DIN Next LT Pro";
+  font-weight: medium;
+  src: url("assets/fonts/DINNextLTPro-Medium.otf") format("otf");
+}
+
+@font-face {
+  font-family: "DIN Next LT Pro";
+  font-weight: bold;
+  src: url("assets/fonts/DINNextLTPro-Bold.otf") format("otf");
+}
+
 #flow__container {
   background-color: #ECECEC;
   position: relative;
-  font-family: 'Helvetica Neue';
+  font-family: "DIN Next LT Pro";
   height: 800px;
 }
 
@@ -16,7 +36,7 @@
   --black-circle-size:  100px;
 
   /* for testing */
-  display: none;
+  /* display: none; */
 }
 
 .flow__circle {
@@ -84,4 +104,6 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
   grid-auto-rows: minmax(100px, auto);
+  position: relative;
+  z-index: 99;
 }

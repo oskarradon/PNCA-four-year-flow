@@ -21,7 +21,7 @@ function animate() {
          );
 
   tl.add( TweenLite.to( thesisTitle, 1, { opacity:1 } ),
-          TweenLite.to( line, 2, { left: -300, width: 1000 } )
+          TweenLite.to( line, 2, { left: 100, width: 850 } )
         );
 }
 
