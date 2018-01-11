@@ -5,6 +5,8 @@
   height: 800px;
 }
 
+/* SHAPE LAYER */
+
 .flow__circle {
   border-radius: 100%;
   position: absolute;
@@ -60,15 +62,7 @@
   justify-content: center;
 }
 
-/* TEXT */
-
-#flow__title-thesis {
-  color: white;
-  font-size: 18px;
-  opacity: 0;
-}
-
-/* OTHER OBJECTS */
+/* other objects */
 
 #flow__line {
   height: 1px;
@@ -77,4 +71,12 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/* focus and thesis titles */
+
+#flow__title-thesis {
+  color: white;
+  font-size: 18px;
+  opacity: 0;
 }
