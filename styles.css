@@ -106,11 +106,6 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
   grid-auto-rows: minmax(100px, auto);
-  grid-template-areas:
-    "ex  exp  .   ."
-    "yr  .    .   ."
-    "yr1 yr2  .   yr4"
-    "fnd mjrs ars ths";
   position: relative;
   z-index: 99;
 }
@@ -118,41 +113,41 @@
 /* articles */
 
 #flow__article-explore {
-  grid-area: ex;
+  grid-area: 1 / 1;
 }
 
 #flow__article-experiment {
-  grid-area: exp;
+  grid-area: 1 / 2;
 }
 
 #flow__article-year {
-  grid-area: yr;
+  grid-area: 2 / 1;
 }
 
 #flow__article-year-one {
-  grid-area: yr1;
+  grid-area: 3 / 1;
 }
 
 #flow__article-year-two {
-  grid-area: yr2;
+  grid-area: 3 / 2;
 }
 
 #flow__article-year-four {
-  grid-area: yr4;
+  grid-area: 3 / 4;
 }
 
-#flow__article-article-foundation {
-  grid-area: fnd;
+#flow__article-foundation {
+  grid-area: 4 / 1;
 }
 
-#flow__article-article-majors {
-  grid-area: mjrs;
+#flow__article-majors {
+  grid-area: 4 / 2;
 }
 
-#flow__article-article-areas {
-  grid-area: ars;
+#flow__article-areas {
+  grid-area: 4 / 3;
 }
 
-#flow__article-article-thesis {
-  grid-area: ths;
+#flow__article-thesis {
+  grid-area: 4 / 4;
 }
