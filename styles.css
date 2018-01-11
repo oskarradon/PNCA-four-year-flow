@@ -106,12 +106,53 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
   grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "ex  exp  .   ."
+    "yr  .    .   ."
+    "yr1 yr2  .   yr4"
+    "fnd mjrs ars ths";
   position: relative;
   z-index: 99;
 }
 
 /* articles */
 
+#flow__article-explore {
+  grid-area: ex;
+}
+
 #flow__article-experiment {
-  grid-area: 1 / 2 / auto / span 3;
+  grid-area: exp;
+}
+
+#flow__article-year {
+  grid-area: yr;
+}
+
+#flow__article-year-one {
+  grid-area: yr1;
+}
+
+#flow__article-year-two {
+  grid-area: yr2;
+}
+
+#flow__article-year-four {
+  grid-area: yr4;
+}
+
+#flow__article-article-foundation {
+  grid-area: fnd;
+}
+
+#flow__article-article-majors {
+  grid-area: mjrs;
+}
+
+#flow__article-article-areas {
+  grid-area: ars;
+}
+
+#flow__article-article-thesis {
+  grid-area: ths;
 }
