@@ -1,5 +1,6 @@
 /* FONTS */
 
+
 @font-face {
   font-family: "DIN Next LT Pro";
   font-weight: normal;
@@ -21,13 +22,12 @@
 #flow__container {
   background-color: #ECECEC;
   position: relative;
-  font-family: "DIN Next LT Pro";
-  font-weight: normal;
-  font-size: 12px;
-  height: 800px;
+  height: 1000px;
 }
 
+
 /* SHAPE LAYER */
+
 
 #flow__shape-layer {
   /* variables */
@@ -37,8 +37,21 @@
   --white-circle-size:  200px;
   --black-circle-size:  100px;
 
+  position: relative;
+
   /* for testing */
   /* display: none; */
+}
+
+#flow__shape-layer-inner {
+  position: relative;
+  height: 800px;
+  max-width: 1290px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  transform: translateX(-50%);
 }
 
 .flow__circle {
@@ -99,18 +112,36 @@
   opacity: 0;
 }
 
+
 /* TEXT LAYER */
+
 
 #flow__text-layer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
-  grid-auto-rows: minmax(100px, auto);
-  position: relative;
+  grid-auto-rows: minmax(10px, auto);
+
+  position: absolute;
   z-index: 99;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 850px;
+
+  font-family: "DIN Next LT Pro";
+  font-weight: normal;
+  /* font-size: 14px; */
+
+  /* for testing */
+  /* display: none; */
 }
 
 /* articles */
+
+#flow__text-layer article dl dd {
+  -webkit-margin-start: 0px;
+}
 
 /*
   Note: grid-area is a shorthand property for grid-row-start, grid-column-start, grid-row-end and grid-column-end.
@@ -120,10 +151,16 @@
 
 #flow__article-explore {
   grid-area: 1 / 1;
+  align-self: end;
+}
+
+#flow__article-explore h1 {
+  font-size: 1.8em
 }
 
 #flow__article-experiment {
   grid-area: 1 / 2;
+  align-self: end;
 }
 
 #flow__article-year {
@@ -155,5 +192,5 @@
 }
 
 #flow__article-thesis {
-  grid-area: 4 / 4;
+  grid-area: 4 / 4  ;
 }
