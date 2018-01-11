@@ -3,16 +3,21 @@
   position: relative;
   font-family: 'Helvetica Neue';
   height: 800px;
+}
 
+/* SHAPE LAYER */
+
+#flow__shape-layer {
   /* variables */
 
   --yellow-circle-size: 800px;
   --blue-circle-size:   400px;
   --white-circle-size:  200px;
   --black-circle-size:  100px;
-}
 
-/* SHAPE LAYER */
+  /* for testing */
+  display: none;
+}
 
 .flow__circle {
   border-radius: 100%;
@@ -70,4 +75,13 @@
   color: white;
   font-size: 18px;
   opacity: 0;
+}
+
+/* TEXT LAYER */
+
+#flow__text-layer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  grid-auto-rows: minmax(100px, auto);
 }
