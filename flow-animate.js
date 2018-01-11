@@ -15,12 +15,12 @@ function animate() {
   let line = document.getElementById( 'flow__line' );
 
 
-  tl.add( TweenLite.to( blue, 2, { left: 510 } ),
+  tl.add( TweenLite.to( blue, 2, { left: 280 } ),
           TweenLite.to( white, 2, { left: 820 } ),
           TweenLite.to( black, 2, { left: 850 } ),
          );
 
-  tl.add( TweenLite.to( thesisTitle, 1, { opacity:1 } ),
+  tl.add( TweenLite.to( thesisTitle, 1, { opacity: 1 } ),
           TweenLite.to( line, 2, { left: 100, width: 900 } )
         );
 }
