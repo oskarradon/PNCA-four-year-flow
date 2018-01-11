@@ -112,6 +112,12 @@
 
 /* articles */
 
+/*
+  Note: grid-area is a shorthand property for grid-row-start, grid-column-start, grid-row-end and grid-column-end.
+
+  It is used here to hard code the articles positions, which row and column they are on. The end values are not used because each article element is only ever one fr unit wide.
+ */
+
 #flow__article-explore {
   grid-area: 1 / 1;
 }
