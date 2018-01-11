@@ -1,0 +1,78 @@
+.flow__container {
+  background-color: #ECECEC;
+  position: relative;
+  font-family: 'Helvetica Neue';
+  height: 800px;
+}
+
+.flow__circle {
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* CIRCLES */
+
+/* yellow */
+$yellow-circle-size: 800px;
+
+/* blue */
+$blue-circle-size: 400px;
+
+/* white */
+$white-circle-size: 200px;
+
+/* black */
+$black-circle-size: 100px;
+
+#flow__yellow-circle {
+  width: $yellow-circle-size;
+  height: $yellow-circle-size;
+  background-color: yellow;
+}
+
+#flow__blue-circle {
+  width: $blue-circle-size;
+  height: $blue-circle-size;
+  background-color: blue;
+  // initial position
+  // left: -410px;
+}
+
+#flow__white-circle {
+  width: $white-circle-size;
+  height: $white-circle-size;
+  background-color: white;
+  // left: -620px;
+}
+
+#flow__black-circle {
+  width: $black-circle-size;
+  height: $black-circle-size;
+  background-color: black;
+  left: -730px;
+  // for centered text
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TEXT */
+
+#flow__title-thesis {
+  color: white;
+  font-size: 18px;
+  opacity: 0;
+}
+
+/* OTHER OBJECTS */
+
+#flow__line {
+  height: 1px;
+  width: 0px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
