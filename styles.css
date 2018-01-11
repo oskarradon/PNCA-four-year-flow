@@ -3,6 +3,13 @@
   position: relative;
   font-family: 'Helvetica Neue';
   height: 800px;
+
+  /* variables */
+
+  --yellow-circle-size: 800px;
+  --blue-circle-size:   400px;
+  --white-circle-size:  200px;
+  --black-circle-size:  100px;
 }
 
 /* SHAPE LAYER */
@@ -12,22 +19,6 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.flow__container {
-  /* VARIABLES */
-
-  /* yellow */
-  --yellow-circle-size: 800px;
-
-  /* blue */
-  --blue-circle-size: 400px;
-
-  /* white */
-  --white-circle-size: 200px;
-
-  /* black */
-  --black-circle-size: 100px;
 }
 
 #flow__yellow-circle {
