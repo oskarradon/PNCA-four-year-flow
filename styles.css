@@ -2,14 +2,8 @@
 
 @font-face {
   font-family: "DIN Next LT Pro";
-  font-weight: lighter;
-  src: url("assets/fonts/DINNextLTPro-Light.otf") format("otf");
-}
-
-@font-face {
-  font-family: "DIN Next LT Pro";
-  font-weight: medium;
-  src: url("assets/fonts/DINNextLTPro-Medium.otf") format("otf");
+  font-weight: normal;
+  src: url("assets/fonts/DINNextLTPro-Regular.otf") format("otf");
 }
 
 @font-face {
@@ -18,10 +12,18 @@
   src: url("assets/fonts/DINNextLTPro-Bold.otf") format("otf");
 }
 
+@font-face {
+  font-family: "DIN Next LT Pro";
+  font-weight: bolder;
+  src: url("assets/fonts/DINNextLTPro-Black.otf") format("otf");
+}
+
 #flow__container {
   background-color: #ECECEC;
   position: relative;
   font-family: "DIN Next LT Pro";
+  font-weight: normal;
+  font-size: 12px;
   height: 800px;
 }
 
