@@ -20,9 +20,15 @@
 }
 
 #flow__container {
-  background-color: #ECECEC;
+
+  /* variables */
+
+  --color-background:   #ECECEC;
+
+  background-color: var(--color-background);
   position: relative;
   height: 1000px;
+  font-family: "DIN Next LT Pro";
 }
 
 
@@ -30,12 +36,18 @@
 
 
 #flow__shape-layer {
+
   /* variables */
 
-  --yellow-circle-size: 800px;
-  --blue-circle-size:   400px;
-  --white-circle-size:  200px;
-  --black-circle-size:  100px;
+  --circle-size-yellow: 800px;
+  --circle-size-blue:   600px;
+  --circle-size-white:  200px;
+  --circle-size-black:  100px;
+
+  --color-yellow:       yellow;
+  --color-blue:         blue;
+  --color-black:        black;
+  --color-white:        white;
 
   position: relative;
 
@@ -62,31 +74,31 @@
 }
 
 #flow__yellow-circle {
-  width: var(--yellow-circle-size);
-  height: var(--yellow-circle-size);
-  background-color: yellow;
+  width: var(--circle-size-yellow);
+  height: var(--circle-size-yellow);
+  background-color: var(--color-yellow);
 }
 
 #flow__blue-circle {
-  width: var(--blue-circle-size);
-  height: var(--blue-circle-size);
-  background-color: blue;
+  width: var(--circle-size-blue);
+  height: var(--circle-size-blue);
+  background-color: var(--color-blue);
   /* initial position */
-  left: 410px;
+  left: 110px;
 }
 
 #flow__white-circle {
-  width: var(--white-circle-size);
-  height: var(--white-circle-size);
-  background-color: white;
-  left: 620px;
+  width: var(--circle-size-white);
+  height: var(--circle-size-white);
+  background-color: var(--color-white);
+  left: 320px;
 }
 
 #flow__black-circle {
-  width: var(--black-circle-size);
-  height: var(--black-circle-size);
-  background-color: black;
-  left: 730px;
+  width: var(--circle-size-black);
+  height: var(--circle-size-black);
+  background-color: var(--color-black);
+  left: 370px;
   /* for centered text */
   display: flex;
   align-items: center;
@@ -98,7 +110,7 @@
 #flow__line {
   height: 1px;
   width: 0px;
-  background: black;
+  background: var(--color-black);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -107,7 +119,7 @@
 /* focus and thesis titles */
 
 #flow__title-thesis {
-  color: white;
+  color: var(--color-white);
   font-size: 18px;
   opacity: 0;
 }
@@ -129,12 +141,8 @@
   transform: translateX(-50%);
   width: 850px;
 
-  font-family: "DIN Next LT Pro";
-  font-weight: normal;
-  /* font-size: 14px; */
-
   /* for testing */
-  /* display: none; */
+  display: none;
 }
 
 /* articles */

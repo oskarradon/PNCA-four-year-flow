@@ -15,9 +15,9 @@ function animate() {
   let line = document.getElementById( 'flow__line' );
 
 
-  tl.add( TweenLite.to( blue, 2, { left: 510 } ),
-          TweenLite.to( white, 2, { left: 820 } ),
-          TweenLite.to( black, 2, { left: 950 } ),
+  tl.add( TweenLite.to( blue, 2, { left: 210 } ),
+          TweenLite.to( white, 2, { left: 580 } ),
+          TweenLite.to( black, 2, { left: 635 } ),
          );
 
   tl.add( TweenLite.to( thesisTitle, 1, { opacity:1 } ),
