@@ -49,6 +49,10 @@
   --color-black:        black;
   --color-white:        white;
 
+  --circle-pos-blue:    0px;
+  --circle-pos-white:   620px;
+  --circle-pos-black:   730px;
+
   position: relative;
 
   /* for testing */
@@ -84,21 +88,21 @@
   height: var(--circle-size-blue);
   background-color: var(--color-blue);
   /* initial position */
-  left: 110px;
+  left: var(--circle-pos-blue);
 }
 
 #flow__white-circle {
   width: var(--circle-size-white);
   height: var(--circle-size-white);
   background-color: var(--color-white);
-  left: 320px;
+  left: var(--circle-pos-white);
 }
 
 #flow__black-circle {
   width: var(--circle-size-black);
   height: var(--circle-size-black);
   background-color: var(--color-black);
-  left: 370px;
+  left: var(--circle-pos-black);
   /* for centered text */
   display: flex;
   align-items: center;
@@ -136,13 +140,13 @@
 
   position: absolute;
   z-index: 99;
-  top: 120px;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
   width: 850px;
 
   /* for testing */
-  display: none;
+  /* display: none; */
 }
 
 /* articles */
