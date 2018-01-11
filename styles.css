@@ -38,22 +38,22 @@
   width: var(--blue-circle-size);
   height: var(--blue-circle-size);
   background-color: blue;
-  // initial position
-  // left: -410px;
+  /* initial position */
+  left: 410px;
 }
 
 #flow__white-circle {
   width: var(--white-circle-size);
   height: var(--white-circle-size);
   background-color: white;
-  // left: -620px;
+  left: 620px;
 }
 
 #flow__black-circle {
   width: var(--black-circle-size);
   height: var(--black-circle-size);
   background-color: black;
-  left: -730px;
+  left: 730px;
   /* for centered text */
   display: flex;
   align-items: center;
