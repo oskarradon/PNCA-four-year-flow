@@ -12,47 +12,49 @@
   transform: translateY(-50%);
 }
 
-/* CIRCLES */
+.flow__container {
+  /* VARIABLES */
 
-/* yellow */
-$yellow-circle-size: 800px;
+  /* yellow */
+  --yellow-circle-size: 800px;
 
-/* blue */
-$blue-circle-size: 400px;
+  /* blue */
+  --blue-circle-size: 400px;
 
-/* white */
-$white-circle-size: 200px;
+  /* white */
+  --white-circle-size: 200px;
 
-/* black */
-$black-circle-size: 100px;
+  /* black */
+  --black-circle-size: 100px;
+}
 
 #flow__yellow-circle {
-  width: $yellow-circle-size;
-  height: $yellow-circle-size;
+  width: var(--yellow-circle-size);
+  height: var(--yellow-circle-size);
   background-color: yellow;
 }
 
 #flow__blue-circle {
-  width: $blue-circle-size;
-  height: $blue-circle-size;
+  width: var(--blue-circle-size);
+  height: var(--blue-circle-size);
   background-color: blue;
   // initial position
   // left: -410px;
 }
 
 #flow__white-circle {
-  width: $white-circle-size;
-  height: $white-circle-size;
+  width: var(--white-circle-size);
+  height: var(--white-circle-size);
   background-color: white;
   // left: -620px;
 }
 
 #flow__black-circle {
-  width: $black-circle-size;
-  height: $black-circle-size;
+  width: var(--black-circle-size);
+  height: var(--black-circle-size);
   background-color: black;
   left: -730px;
-  // for centered text
+  /* for centered text */
   display: flex;
   align-items: center;
   justify-content: center;
