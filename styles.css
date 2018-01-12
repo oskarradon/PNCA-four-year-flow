@@ -42,10 +42,17 @@ body, html {
   --color-black:        black;
   --color-white:        white;
 
-  background-color: var(--color-background);
   position: relative;
-  height: 1038px;
+
+  background-color: var(--color-background);
   font-family: "DIN Next LT Pro";
+  height: 3000px;
+}
+
+@media screen and (min-width: 768px) {
+  .flow__container {
+    height: 1038px;
+  }
 }
 
 
@@ -56,13 +63,13 @@ body, html {
 
   /* variables */
 
-  --circle-size-yellow:     800px;
+  --circle-size-yellow:     90vw;
   --circle-size-yellow--lg: 800px;
-  --circle-size-blue:       670px;
+  --circle-size-blue:       0px;
   --circle-size-blue--lg:   670px;
-  --circle-size-white:      200px;
+  --circle-size-white:      0px;
   --circle-size-white--lg:  200px;
-  --circle-size-black:      100px;
+  --circle-size-black:      0px;
   --circle-size-black--lg:  100px;
 
   --circle-pos-blue:        70px;
@@ -76,7 +83,9 @@ body, html {
 }
 
 .flow__shape-layer-inner {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .flow__circle {
@@ -90,6 +99,8 @@ body, html {
   }
 
   .flow__shape-layer-inner {
+    display: block;
+    position: absolute;
     height: 800px;
     width: 1290px;
     top: 50%;
@@ -107,6 +118,7 @@ body, html {
 .flow__circle-yellow {
   width: var(--circle-size-yellow);
   height: var(--circle-size-yellow);
+  max-width: 400px;
   background-color: var(--color-yellow);
 }
 
@@ -138,16 +150,27 @@ body, html {
 }
 
 @media screen and (min-width: 768px) {
+  .flow__circle-yellow {
+    width: var(--circle-size-yellow--lg);
+    height: var(--circle-size-yellow--lg);
+  }
+
   .flow__circle-blue {
     left: var(--circle-pos-blue);
+    width: var(--circle-size-blue--lg);
+    height: var(--circle-size-blue--lg);
   }
 
   .flow__circle-white {
     left: var(--circle-pos-white);
+    width: var(--circle-size-white--lg);
+    height: var(--circle-size-white--lg);
   }
 
   .flow__circle-black {
     left: var(--circle-pos-black);
+    width: var(--circle-size-black--lg);
+    height: var(--circle-size-black--lg);
   }
 }
 
@@ -167,7 +190,7 @@ body, html {
 .flow__title-focus, .flow__title-thesis {
   font-size: 18px;
   font-weight: normal;
-  opacity: 0;
+  opacity: 1;
 }
 
 .flow__title-focus {
@@ -187,7 +210,7 @@ body, html {
   display: grid;
 
   /* for testing */
-  /* display: none; */
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -207,7 +230,7 @@ body, html {
 /* articles */
 
 .flow__text-layer article {
-  opacity: 0;
+  opacity: 1;
 }
 
 .flow__text-layer p, .flow__text-layer h2, .flow__text-layer dl {
