@@ -1,4 +1,6 @@
-function animate() {
+addEventListener( "resize", animate( window.innerWidth ) );
+
+function animate(w) {
   let tl = new TimelineLite();
 
   // OBJECTS
@@ -35,20 +37,25 @@ function animate() {
   // other objects
   let line = document.querySelector( '.flow__line' );
 
+  // reset the animation
+  tl.pause(0);
+  tl.clear();
 
-  tl.add( TweenLite.to( blue, 2, { left: 260 } ),
-          TweenLite.to( white, 2, { left: 720 } ),
-          TweenLite.to( black, 2, { left: 770 } ),
-          TweenLite.to( line, 2, { left: 92, width: 680 } ),
+  if ( w > 768 ) {
+    tl.add( TweenLite.to( blue, 2, { left: 260 } ),
+            TweenLite.to( white, 2, { left: 720 } ),
+            TweenLite.to( black, 2, { left: 770 } ),
+            TweenLite.to( line, 2, { left: 92, width: 680 } ),
 
-          new TimelineLite().staggerTo( columnOne, 2, { delay: 2, opacity: 1 }, .3 ),
+            new TimelineLite().staggerTo( columnOne, 2, { delay: 2, opacity: 1 }, .3 ),
 
-          new TimelineLite().staggerTo( columnTwo, 2, { delay: 3, opacity: 1 }, .3 ),
+            new TimelineLite().staggerTo( columnTwo, 2, { delay: 3, opacity: 1 }, .3 ),
 
-          TweenLite.to( columnThree, 1, { delay: 4, opacity: 1 } ),
+            TweenLite.to( columnThree, 1, { delay: 4, opacity: 1 } ),
 
-          new TimelineLite().staggerTo( columnFour, 2, { delay: 4., opacity: 1 }, .3 )
-         );
+            new TimelineLite().staggerTo( columnFour, 2, { delay: 4., opacity: 1 }, .3 )
+          );
+  }
 }
 
 setTimeout( () => { animate() }, 600 );

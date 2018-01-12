@@ -63,10 +63,10 @@ body, html {
 
   /* variables */
 
-  --circle-size-yellow:         90vw;
-  --circle-size-blue:           70vw;
-  --circle-size-white:          25vw;
-  --circle-size-black:          15vw;
+  --circle-size-yellow:         110vw;
+  --circle-size-blue:           90vw;
+  --circle-size-white:          200px;
+  --circle-size-black:          100px;
 
   --circle-size-yellow--lg:     800px;
   --circle-size-blue--lg:       670px;
@@ -74,9 +74,9 @@ body, html {
   --circle-size-black--lg:      100px;
 
   --circle-pos-yellow:          20px;
-  --circle-pos-blue:            13vw;
-  --circle-pos-white:           34vw;
-  --circle-pos-black:           40vw;
+  --circle-pos-blue:            110px;
+  --circle-pos-white:           180px;
+  --circle-pos-black:           230px;
 
   --circle-pos-blue--lg:        70px;
   --circle-pos-white--lg:       320px;
