@@ -26,9 +26,9 @@ function animate() {
   let columnThree = document.getElementById( 'flow__article-areas' );
 
   let columnFour = [
+    document.getElementById( 'flow__article-year-four' ),
     document.getElementById( 'flow__title-focus' ),
     document.getElementById( 'flow__title-thesis' ),
-    document.getElementById( 'flow__article-year-four' ),
     document.getElementById( 'flow__article-thesis' )
   ]
 
@@ -47,7 +47,7 @@ function animate() {
 
           TweenLite.to( columnThree, 1, { delay: 4, opacity: 1 } ),
 
-          new TimelineLite().staggerTo( columnFour, 2, { delay: 4, opacity: 1 }, .3 )
+          new TimelineLite().staggerTo( columnFour, 2, { delay: 4.5, opacity: 1 }, .3 )
          );
 }
 
