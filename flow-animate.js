@@ -28,8 +28,9 @@ function animate() {
   tl.add( TweenLite.to( blue, 2, { left: 280 } ),
           TweenLite.to( white, 2, { left: 740 } ),
           TweenLite.to( black, 2, { left: 790 } ),
-          TweenLite.to( line, 2, { left: 130, width: 660 } ),
-          // delay 2
+          TweenLite.to( line, 2, { left: 92, width: 700 } ),
+
+          new TimelineLite().staggerTo( columnOne, 2, { delay: 2, opacity: 1 }, .3 ),
 
           TweenLite.to( focusTitle, 1, { opacity: 1 } ),
           TweenLite.to( thesisTitle, 1, { opacity: 1 } ),

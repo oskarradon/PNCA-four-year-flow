@@ -161,6 +161,10 @@
 
 /* articles */
 
+#flow__text-layer article {
+  opacity: 0;
+}
+
 #flow__text-layer p, #flow__text-layer h2, #flow__text-layer dl {
   margin: 0px;
 }
