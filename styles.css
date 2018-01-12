@@ -24,7 +24,7 @@ body, html {
   margin: 0px;
 }
 
-#flow__container {
+.flow__container {
 
   /* variables */
 
@@ -46,7 +46,7 @@ body, html {
 /* SHAPE LAYER */
 
 
-#flow__shape-layer {
+.flow__shape-layer {
 
   /* variables */
 
@@ -70,7 +70,7 @@ body, html {
   --opacity: 1;
 }
 
-#flow__shape-layer-inner {
+.flow__shape-layer-inner {
   position: absolute;
   height: 800px;
   width: 1290px;
@@ -87,13 +87,13 @@ body, html {
   transform: translateY(-50%);
 }
 
-#flow__circle-yellow {
+.flow__circle-yellow {
   width: var(--circle-size-yellow);
   height: var(--circle-size-yellow);
   background-color: var(--color-yellow);
 }
 
-#flow__circle-blue {
+.flow__circle-blue {
   width: var(--circle-size-blue);
   height: var(--circle-size-blue);
   background-color: var(--color-blue);
@@ -101,7 +101,7 @@ body, html {
   left: var(--circle-pos-blue);
 }
 
-#flow__circle-white {
+.flow__circle-white {
   width: var(--circle-size-white);
   height: var(--circle-size-white);
   background-color: var(--color-white);
@@ -111,7 +111,7 @@ body, html {
   justify-content: center;
 }
 
-#flow__circle-black {
+.flow__circle-black {
   width: var(--circle-size-black);
   height: var(--circle-size-black);
   background-color: var(--color-black);
@@ -124,7 +124,7 @@ body, html {
 
 /* other objects */
 
-#flow__line {
+.flow__line {
   height: 1px;
   width: 0px;
   background: var(--color-black);
@@ -135,18 +135,18 @@ body, html {
 
 /* focus and thesis titles */
 
-#flow__title-focus, #flow__title-thesis {
+.flow__title-focus, .flow__title-thesis {
   font-size: 18px;
   font-weight: normal;
   opacity: var(--opacity);
 }
 
-#flow__title-focus {
+.flow__title-focus {
   margin-top: 20px;
   font-weight: bold;
 }
 
-#flow__title-thesis {
+.flow__title-thesis {
   color: var(--color-white);
 }
 
@@ -154,7 +154,7 @@ body, html {
 /* TEXT LAYER */
 
 
-#flow__text-layer {
+.flow__text-layer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
@@ -174,23 +174,23 @@ body, html {
 
 /* articles */
 
-#flow__text-layer article {
+.flow__text-layer article {
   opacity: var(--opacity);
 }
 
-#flow__text-layer p, #flow__text-layer h2, #flow__text-layer dl {
+.flow__text-layer p, .flow__text-layer h2, .flow__text-layer dl {
   margin: 0px;
 }
 
-#flow__text-layer h2 {
+.flow__text-layer h2 {
   font-size: 1em;
 }
 
-#flow__text-layer article dl dt {
+.flow__text-layer article dl dt {
   font-weight: bold;
 }
 
-#flow__text-layer article dl dd {
+.flow__text-layer article dl dd {
   -webkit-margin-start: 0px;
 }
 
@@ -200,58 +200,58 @@ body, html {
   It is used here to hard code the articles positions, which row and column they are on. The end values are not used because each article element is only ever one fr unit wide.
  */
 
-#flow__article-explore {
+.flow__article-explore {
   grid-area: 1 / 1;
   align-self: end;
 }
 
-#flow__article-explore h1, #flow__article-experiment h1 {
+.flow__article-explore h1, .flow__article-experiment h1 {
   font-size: 1.8em;
   margin-bottom: .1em;
 }
 
-#flow__article-experiment {
+.flow__article-experiment {
   grid-area: 1 / 2;
   align-self: end;
 }
 
-#flow__article-year {
+.flow__article-year {
   grid-area: 2 / 1;
 }
 
-#flow__article-year-one {
+.flow__article-year-one {
   grid-area: 3 / 1;
 }
 
-#flow__article-year-two {
+.flow__article-year-two {
   grid-area: 3 / 2;
 }
 
-#flow__article-year-four {
+.flow__article-year-four {
   grid-area: 3 / 4;
 }
 
-#flow__article-foundation {
+.flow__article-foundation {
   grid-area: 4 / 1;
 }
 
-#flow__article-majors {
+.flow__article-majors {
   grid-area: 4 / 2;
 }
 
-#flow__article-majors dl#flow__list-title-minors {
+.flow__article-majors dl.flow__list-title-minors {
   margin-top: 1em
 }
 
-#flow__article-areas {
+.flow__article-areas {
   grid-area: 4 / 3;
 }
 
-#flow__article-thesis {
+.flow__article-thesis {
   grid-area: 4 / 4  ;
   margin-top: 70px;
 }
 
-#flow__article-thesis span {
+.flow__article-thesis span {
   font-weight: bold;
 }
