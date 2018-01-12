@@ -19,10 +19,18 @@
   src: url("assets/fonts/DINNextLTPro-Black.otf") format("otf");
 }
 
+
+
+
+
 body, html {
   padding: 0px;
   margin: 0px;
 }
+
+
+/* CONTAINER */
+
 
 .flow__container {
 
@@ -34,11 +42,9 @@ body, html {
   --color-black:        black;
   --color-white:        white;
 
-  --container-size: 1038px;
-
   background-color: var(--color-background);
   position: relative;
-  height: var(--container-size);
+  height: 1038px;
   font-family: "DIN Next LT Pro";
 }
 
@@ -64,6 +70,10 @@ body, html {
 
   /* for testing */
   /* display: none; */
+}
+
+@media screen and (min-width: 768px) {
+
 }
 
 .flow__shape-layer-inner {
@@ -157,11 +167,10 @@ body, html {
   grid-auto-rows: minmax(10px, auto);
 
   position: absolute;
-  top: calc(99px + 50px); /*  fix  this*/
+  top: calc(99px + 50px);
   left: calc(50% - 128px);
   transform: translateX(-50%);
   width: 850px;
-  /* padding: 50%; */
 
   /* for testing */
   /* display: none; */

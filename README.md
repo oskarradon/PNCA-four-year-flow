@@ -13,4 +13,6 @@ The `.flow__container` element is a wrapper for the content which is divided int
 
 The animation is accomplished using the GSAP TweenLite, TimelineLite, and CSSPlugin libraries which tween the circle's `left` values, each of which are set using variables in the CSS. The text is animated using the `opacity` value, and is staggered using TimeLine instances nested in the main Timeline.
 
+The `article` elements in the `.flow__text-layer` are positioned using the `grid-area` property to specify their starting row and column. Since each of the `article` elements are only 1 row X 1 column their ending row and columns are not specified. This looks like `grid-area: 2 / 3`. More on CSS grids can be found [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout).
+
 &copy; Oskar Kimball 2017
