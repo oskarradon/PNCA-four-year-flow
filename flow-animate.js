@@ -1,6 +1,4 @@
-let width = window.innerWidth;
-
-function animate(w) {
+function animate() {
   let tl = new TimelineLite();
 
   // OBJECTS
@@ -41,7 +39,10 @@ function animate(w) {
   tl.pause(0);
   tl.clear();
 
-  if ( w > 768 ) {
+  let width = window.innerWidth;
+  console.log(width)
+
+  if ( width > 768 ) {
     tl.add( TweenLite.to( blue, 2, { left: 260 } ),
             TweenLite.to( white, 2, { left: 720 } ),
             TweenLite.to( black, 2, { left: 770 } ),
@@ -56,12 +57,10 @@ function animate(w) {
             new TimelineLite().staggerTo( columnFour, 2, { delay: 4., opacity: 1 }, .3 )
           );
   }
-}
+};
 
 setTimeout( () => { animate() }, 600 );
 
-animate(width);
-
 window.addEventListener( "resize", () => {
-  animate(width);
+  animate();
 });
