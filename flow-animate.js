@@ -8,10 +8,6 @@ function animate() {
   let white = document.getElementById( 'flow__white-circle' );
   let black = document.getElementById( 'flow__black-circle' );
 
-  // titles
-  let focusTitle = document.getElementById( 'flow__title-focus' );
-  let thesisTitle = document.getElementById( 'flow__title-thesis' );
-
   // columns
 
   let columnOne = [
@@ -29,6 +25,13 @@ function animate() {
 
   let columnThree = document.getElementById( 'flow__article-areas' );
 
+  let columnFour = [
+    document.getElementById( 'flow__title-focus' ),
+    document.getElementById( 'flow__title-thesis' ),
+    document.getElementById( 'flow__article-year-four' ),
+    document.getElementById( 'flow__article-thesis' )
+  ]
+
   // other objects
   let line = document.getElementById( 'flow__line' );
 
@@ -44,8 +47,7 @@ function animate() {
 
           TweenLite.to( columnThree, 1, { delay: 4, opacity: 1 } ),
 
-          TweenLite.to( focusTitle, 1, { delay: 5, opacity: 1 } ),
-          TweenLite.to( thesisTitle, 1, { delay: 5, opacity: 1 } ),
+          new TimelineLite().staggerTo( columnFour, 2, { delay: 4, opacity: 1 }, .3 )
          );
 }
 
