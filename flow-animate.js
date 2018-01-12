@@ -36,10 +36,10 @@ function animate() {
   let line = document.getElementById( 'flow__line' );
 
 
-  tl.add( TweenLite.to( blue, 2, { left: 280 } ),
-          TweenLite.to( white, 2, { left: 740 } ),
-          TweenLite.to( black, 2, { left: 790 } ),
-          TweenLite.to( line, 2, { left: 92, width: 700 } ),
+  tl.add( TweenLite.to( blue, 2, { left: 260 } ),
+          TweenLite.to( white, 2, { left: 720 } ),
+          TweenLite.to( black, 2, { left: 770 } ),
+          TweenLite.to( line, 2, { left: 92, width: 680 } ),
 
           new TimelineLite().staggerTo( columnOne, 2, { delay: 2, opacity: 1 }, .3 ),
 
