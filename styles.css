@@ -36,11 +36,11 @@ body, html {
 
   /* variables */
 
-  --color-background:   #ECECEC;
-  --color-yellow:       yellow;
-  --color-blue:         #21C1FF;
-  --color-black:        black;
-  --color-white:        white;
+  --color-background:           #ECECEC;
+  --color-yellow:               yellow;
+  --color-blue:                 #21C1FF;
+  --color-black:                black;
+  --color-white:                white;
 
   position: relative;
 
@@ -63,21 +63,23 @@ body, html {
 
   /* variables */
 
-  --circle-size-yellow:     90vw;
-  --circle-size-yellow--lg: 800px;
-  --circle-size-blue:       70vw;
-  --circle-size-blue--lg:   670px;
-  --circle-size-white:      20vw;
-  --circle-size-white--lg:  200px;
-  --circle-size-black:      15vw;
-  --circle-size-black--lg:  100px;
+  --circle-size-yellow:         90vw;
+  --circle-size-blue:           70vw;
+  --circle-size-white:          25vw;
+  --circle-size-black:          15vw;
+
+  --circle-size-yellow--lg:     800px;
+  --circle-size-blue--lg:       670px;
+  --circle-size-white--lg:      200px;
+  --circle-size-black--lg:      100px;
 
   --circle-pos-yellow:          20px;
   --circle-pos-blue:            13vw;
+  --circle-pos-white:           34vw;
+  --circle-pos-black:           40vw;
+
   --circle-pos-blue--lg:        70px;
-  --circle-pos-white:           80px;
   --circle-pos-white--lg:       320px;
-  --circle-pos-black:           300px;
   --circle-pos-black--lg:       370px;
 
   position: relative;
