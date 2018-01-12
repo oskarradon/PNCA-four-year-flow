@@ -4,9 +4,9 @@ function animate() {
   // OBJECTS
 
   // circles
-  let blue = document.getElementById( 'flow__blue-circle' );
-  let white = document.getElementById( 'flow__white-circle' );
-  let black = document.getElementById( 'flow__black-circle' );
+  let blue = document.getElementById( 'flow__circle-blue' );
+  let white = document.getElementById( 'flow__circle-white' );
+  let black = document.getElementById( 'flow__circle-black' );
 
   // columns
 
@@ -47,7 +47,7 @@ function animate() {
 
           TweenLite.to( columnThree, 1, { delay: 4, opacity: 1 } ),
 
-          new TimelineLite().staggerTo( columnFour, 2, { delay: 4.5, opacity: 1 }, .3 )
+          new TimelineLite().staggerTo( columnFour, 2, { delay: 4., opacity: 1 }, .3 )
          );
 }
 
