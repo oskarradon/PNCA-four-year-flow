@@ -4,36 +4,36 @@ function animate() {
   // OBJECTS
 
   // circles
-  let blue = document.getElementById( 'flow__circle-blue' );
-  let white = document.getElementById( 'flow__circle-white' );
-  let black = document.getElementById( 'flow__circle-black' );
+  let blue = document.querySelector( '.flow__circle-blue' );
+  let white = document.querySelector( '.flow__circle-white' );
+  let black = document.querySelector( '.flow__circle-black' );
 
   // columns
 
   let columnOne = [
-    document.getElementById( 'flow__article-explore' ),
-    document.getElementById( 'flow__article-year' ),
-    document.getElementById( 'flow__article-year-one' ),
-    document.getElementById( 'flow__article-foundation' ),
+    document.querySelector( '.flow__article-explore' ),
+    document.querySelector( '.flow__article-year' ),
+    document.querySelector( '.flow__article-year-one' ),
+    document.querySelector( '.flow__article-foundation' ),
   ];
 
   let columnTwo = [
-    document.getElementById( 'flow__article-experiment' ),
-    document.getElementById( 'flow__article-year-two' ),
-    document.getElementById( 'flow__article-majors' ),
+    document.querySelector( '.flow__article-experiment' ),
+    document.querySelector( '.flow__article-year-two' ),
+    document.querySelector( '.flow__article-majors' ),
   ];
 
-  let columnThree = document.getElementById( 'flow__article-areas' );
+  let columnThree = document.querySelector( '.flow__article-areas' );
 
   let columnFour = [
-    document.getElementById( 'flow__article-year-four' ),
-    document.getElementById( 'flow__title-focus' ),
-    document.getElementById( 'flow__title-thesis' ),
-    document.getElementById( 'flow__article-thesis' )
+    document.querySelector( '.flow__article-year-four' ),
+    document.querySelector( '.flow__title-focus' ),
+    document.querySelector( '.flow__title-thesis' ),
+    document.querySelector( '.flow__article-thesis' )
   ]
 
   // other objects
-  let line = document.getElementById( 'flow__line' );
+  let line = document.querySelector( '.flow__line' );
 
 
   tl.add( TweenLite.to( blue, 2, { left: 260 } ),

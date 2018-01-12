@@ -62,12 +62,8 @@ body, html {
   position: relative;
   top: 75px;
 
-  /* FOR TESTING */
-
+  /* for testing */
   /* display: none; */
-
-  /* change to 0 and uncomment flow-animate script link in index.html to toggle animation */
-  --opacity: 1;
 }
 
 .flow__shape-layer-inner {
@@ -138,7 +134,7 @@ body, html {
 .flow__title-focus, .flow__title-thesis {
   font-size: 18px;
   font-weight: normal;
-  opacity: var(--opacity);
+  opacity: 0;
 }
 
 .flow__title-focus {
@@ -166,16 +162,16 @@ body, html {
   left: calc(50% - 128px);
   transform: translateX(-50%);
   width: 850px;
+  /* padding: 50%; */
 
-  /* FOR TESTING */
-
+  /* for testing */
   /* display: none; */
 }
 
 /* articles */
 
 .flow__text-layer article {
-  opacity: var(--opacity);
+  opacity: 0;
 }
 
 .flow__text-layer p, .flow__text-layer h2, .flow__text-layer dl {
