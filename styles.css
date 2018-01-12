@@ -104,7 +104,7 @@ body, html {
     display: block;
     position: absolute;
     height: 800px;
-    width: 1290px;
+    width: 920px;
     top: 50%;
     left: 50%;
     margin: 0 auto;
@@ -233,7 +233,7 @@ body, html {
 
     position: absolute;
     top: calc(99px + 50px);
-    left: calc(50% - 128px);
+    left: calc(50% + 57px);
     transform: translateX(-50%);
     width: 850px;
   }

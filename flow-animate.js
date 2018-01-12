@@ -40,7 +40,7 @@ function animate() {
   tl.clear();
 
   let width = window.innerWidth;
-  console.log(width)
+  console.log(width);
 
   if ( width > 768 ) {
     tl.add( TweenLite.to( blue, 2, { left: 260 } ),
