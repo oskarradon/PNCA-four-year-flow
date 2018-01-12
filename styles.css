@@ -56,41 +56,52 @@ body, html {
 
   /* variables */
 
-  --circle-size-yellow: 800px;
-  --circle-size-blue:   670px;
-  --circle-size-white:  200px;
-  --circle-size-black:  100px;
+  --circle-size-yellow:     800px;
+  --circle-size-yellow--lg: 800px;
+  --circle-size-blue:       670px;
+  --circle-size-blue--lg:   670px;
+  --circle-size-white:      200px;
+  --circle-size-white--lg:  200px;
+  --circle-size-black:      100px;
+  --circle-size-black--lg:  100px;
 
-  --circle-pos-blue:    70px;
-  --circle-pos-white:   320px;
-  --circle-pos-black:   370px;
+  --circle-pos-blue:        70px;
+  --circle-pos-white:       320px;
+  --circle-pos-black:       370px;
 
   position: relative;
-  top: 75px;
 
   /* for testing */
   /* display: none; */
 }
 
-@media screen and (min-width: 768px) {
-  /* :) */
-}
-
 .flow__shape-layer-inner {
   position: absolute;
-  height: 800px;
-  width: 1290px;
-  top: 50%;
-  left: 50%;
-  margin: 0 auto;
-  transform: translateX(-50%);
 }
 
 .flow__circle {
   border-radius: 100%;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .flow__shape-layer {
+    top: 75px;
+  }
+
+  .flow__shape-layer-inner {
+    height: 800px;
+    width: 1290px;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    transform: translateX(-50%);
+  }
+
+  .flow__circle {
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .flow__circle-yellow {
@@ -111,7 +122,6 @@ body, html {
   width: var(--circle-size-white);
   height: var(--circle-size-white);
   background-color: var(--color-white);
-  left: var(--circle-pos-white);
   /* for centered text */
   display: flex;
   justify-content: center;
@@ -121,11 +131,24 @@ body, html {
   width: var(--circle-size-black);
   height: var(--circle-size-black);
   background-color: var(--color-black);
-  left: var(--circle-pos-black);
   /* for centered text */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .flow__circle-blue {
+    left: var(--circle-pos-blue);
+  }
+
+  .flow__circle-white {
+    left: var(--circle-pos-white);
+  }
+
+  .flow__circle-black {
+    left: var(--circle-pos-black);
+  }
 }
 
 /* other objects */
@@ -162,18 +185,23 @@ body, html {
 
 .flow__text-layer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(10px, auto);
-
-  position: absolute;
-  top: calc(99px + 50px);
-  left: calc(50% - 128px);
-  transform: translateX(-50%);
-  width: 850px;
 
   /* for testing */
   /* display: none; */
+}
+
+@media screen and (min-width: 768px) {
+  .flow__text-layer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(10px, auto);
+
+    position: absolute;
+    top: calc(99px + 50px);
+    left: calc(50% - 128px);
+    transform: translateX(-50%);
+    width: 850px;
+  }
 }
 
 /* articles */
@@ -204,58 +232,60 @@ body, html {
   It is used here to hard code the articles positions, which row and column they are on. The end values are not used because each article element is only ever one fr unit wide.
  */
 
-.flow__article-explore {
-  grid-area: 1 / 1;
-  align-self: end;
-}
-
-.flow__article-explore h1, .flow__article-experiment h1 {
-  font-size: 1.8em;
-  margin-bottom: .1em;
-}
-
-.flow__article-experiment {
-  grid-area: 1 / 2;
-  align-self: end;
-}
-
-.flow__article-year {
-  grid-area: 2 / 1;
-}
-
-.flow__article-year-one {
-  grid-area: 3 / 1;
-}
-
-.flow__article-year-two {
-  grid-area: 3 / 2;
-}
-
-.flow__article-year-four {
-  grid-area: 3 / 4;
-}
-
-.flow__article-foundation {
-  grid-area: 4 / 1;
-}
-
-.flow__article-majors {
-  grid-area: 4 / 2;
-}
-
-.flow__article-majors dl.flow__list-title-minors {
-  margin-top: 1em
-}
-
-.flow__article-areas {
-  grid-area: 4 / 3;
-}
-
-.flow__article-thesis {
-  grid-area: 4 / 4  ;
-  margin-top: 70px;
-}
-
 .flow__article-thesis span {
   font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .flow__article-explore {
+    grid-area: 1 / 1;
+    align-self: end;
+  }
+
+  .flow__article-explore h1, .flow__article-experiment h1 {
+    font-size: 1.8em;
+    margin-bottom: .1em;
+  }
+
+  .flow__article-experiment {
+    grid-area: 1 / 2;
+    align-self: end;
+  }
+
+  .flow__article-year {
+    grid-area: 2 / 1;
+  }
+
+  .flow__article-year-one {
+    grid-area: 3 / 1;
+  }
+
+  .flow__article-year-two {
+    grid-area: 3 / 2;
+  }
+
+  .flow__article-year-four {
+    grid-area: 3 / 4;
+  }
+
+  .flow__article-foundation {
+    grid-area: 4 / 1;
+  }
+
+  .flow__article-majors {
+    grid-area: 4 / 2;
+  }
+
+  .flow__article-majors dl.flow__list-title-minors {
+    margin-top: 1em
+  }
+
+  .flow__article-areas {
+    grid-area: 4 / 3;
+  }
+
+  .flow__article-thesis {
+    grid-area: 4 / 4  ;
+    margin-top: 70px;
+  }
 }
