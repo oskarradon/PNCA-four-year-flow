@@ -65,16 +65,20 @@ body, html {
 
   --circle-size-yellow:     90vw;
   --circle-size-yellow--lg: 800px;
-  --circle-size-blue:       0px;
+  --circle-size-blue:       70vw;
   --circle-size-blue--lg:   670px;
-  --circle-size-white:      0px;
+  --circle-size-white:      20vw;
   --circle-size-white--lg:  200px;
-  --circle-size-black:      0px;
+  --circle-size-black:      15vw;
   --circle-size-black--lg:  100px;
 
-  --circle-pos-blue:        70px;
-  --circle-pos-white:       320px;
-  --circle-pos-black:       370px;
+  --circle-pos-yellow:          20px;
+  --circle-pos-blue:            13vw;
+  --circle-pos-blue--lg:        70px;
+  --circle-pos-white:           80px;
+  --circle-pos-white--lg:       320px;
+  --circle-pos-black:           300px;
+  --circle-pos-black--lg:       370px;
 
   position: relative;
 
@@ -108,68 +112,79 @@ body, html {
     margin: 0 auto;
     transform: translateX(-50%);
   }
-
-  .flow__circle {
-    top: 50%;
-    transform: translateY(-50%);
-  }
 }
 
 .flow__circle-yellow {
   width: var(--circle-size-yellow);
   height: var(--circle-size-yellow);
   background-color: var(--color-yellow);
+
+  top: var(--circle-pos-yellow);
 }
 
 .flow__circle-blue {
   width: var(--circle-size-blue);
   height: var(--circle-size-blue);
   background-color: var(--color-blue);
-  /* initial position */
-  left: var(--circle-pos-blue);
+
+  top: var(--circle-pos-blue);
 }
 
 .flow__circle-white {
   width: var(--circle-size-white);
   height: var(--circle-size-white);
   background-color: var(--color-white);
+
   /* for centered text */
   display: flex;
   justify-content: center;
+
+  top: var(--circle-pos-white);
 }
 
 .flow__circle-black {
   width: var(--circle-size-black);
   height: var(--circle-size-black);
   background-color: var(--color-black);
+
   /* for centered text */
   display: flex;
   align-items: center;
   justify-content: center;
+
+  top: var(--circle-pos-black);
 }
 
 @media screen and (min-width: 768px) {
+  .flow__circle {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
   .flow__circle-yellow {
     width: var(--circle-size-yellow--lg);
     height: var(--circle-size-yellow--lg);
   }
 
   .flow__circle-blue {
-    left: var(--circle-pos-blue);
     width: var(--circle-size-blue--lg);
     height: var(--circle-size-blue--lg);
+
+    left: var(--circle-pos-blue--lg);
   }
 
   .flow__circle-white {
-    left: var(--circle-pos-white);
     width: var(--circle-size-white--lg);
     height: var(--circle-size-white--lg);
+
+    left: var(--circle-pos-white--lg);
   }
 
   .flow__circle-black {
-    left: var(--circle-pos-black);
     width: var(--circle-size-black--lg);
     height: var(--circle-size-black--lg);
+
+    left: var(--circle-pos-black--lg);
   }
 }
 
