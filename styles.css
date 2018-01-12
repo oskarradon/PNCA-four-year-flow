@@ -19,10 +19,6 @@
   src: url("assets/fonts/DINNextLTPro-Black.otf") format("otf");
 }
 
-
-
-
-
 body, html {
   padding: 0px;
   margin: 0px;
@@ -206,7 +202,7 @@ body, html {
 .flow__title-focus, .flow__title-thesis {
   font-size: 18px;
   font-weight: normal;
-  opacity: 1;
+  opacity: 0;
 }
 
 .flow__title-focus {
@@ -226,7 +222,7 @@ body, html {
   display: grid;
 
   /* for testing */
-  display: none;
+  /* display: none; */
 }
 
 @media screen and (min-width: 768px) {
@@ -246,7 +242,7 @@ body, html {
 /* articles */
 
 .flow__text-layer article {
-  opacity: 1;
+  opacity: 0;
 }
 
 .flow__text-layer p, .flow__text-layer h2, .flow__text-layer dl {
