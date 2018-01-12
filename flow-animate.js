@@ -12,14 +12,22 @@ function animate() {
   let focusTitle = document.getElementById( 'flow__title-focus' );
   let thesisTitle = document.getElementById( 'flow__title-thesis' );
 
-  // column one
+  // columns
 
   let columnOne = [
     document.getElementById( 'flow__article-explore' ),
     document.getElementById( 'flow__article-year' ),
     document.getElementById( 'flow__article-year-one' ),
     document.getElementById( 'flow__article-foundation' ),
-  ]
+  ];
+
+  let columnTwo = [
+    document.getElementById( 'flow__article-experiment' ),
+    document.getElementById( 'flow__article-year-two' ),
+    document.getElementById( 'flow__article-majors' ),
+  ];
+
+  let columnThree = document.getElementById( 'flow__article-areas' );
 
   // other objects
   let line = document.getElementById( 'flow__line' );
@@ -32,8 +40,12 @@ function animate() {
 
           new TimelineLite().staggerTo( columnOne, 2, { delay: 2, opacity: 1 }, .3 ),
 
-          TweenLite.to( focusTitle, 1, { opacity: 1 } ),
-          TweenLite.to( thesisTitle, 1, { opacity: 1 } ),
+          new TimelineLite().staggerTo( columnTwo, 2, { delay: 3, opacity: 1 }, .3 ),
+
+          TweenLite.to( columnThree, 1, { delay: 4, opacity: 1 } ),
+
+          TweenLite.to( focusTitle, 1, { delay: 5, opacity: 1 } ),
+          TweenLite.to( thesisTitle, 1, { delay: 5, opacity: 1 } ),
          );
 }
 
