@@ -157,7 +157,6 @@ body, html {
   grid-auto-rows: minmax(10px, auto);
 
   position: absolute;
-  z-index: 99;
   top: calc(99px + 50px); /*  fix  this*/
   left: calc(50% - 128px);
   transform: translateX(-50%);
