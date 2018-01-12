@@ -1,4 +1,4 @@
-addEventListener( "resize", animate( window.innerWidth ) );
+let width = window.innerWidth;
 
 function animate(w) {
   let tl = new TimelineLite();
@@ -59,3 +59,9 @@ function animate(w) {
 }
 
 setTimeout( () => { animate() }, 600 );
+
+animate(width);
+
+window.addEventListener( "resize", () => {
+  animate(width);
+});
