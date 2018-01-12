@@ -24,6 +24,10 @@
   /* variables */
 
   --color-background:   #ECECEC;
+  --color-yellow:       yellow;
+  --color-blue:         #21C1FF;
+  --color-black:        black;
+  --color-white:        white;
 
   background-color: var(--color-background);
   position: relative;
@@ -40,23 +44,18 @@
   /* variables */
 
   --circle-size-yellow: 800px;
-  --circle-size-blue:   600px;
+  --circle-size-blue:   670px;
   --circle-size-white:  200px;
   --circle-size-black:  100px;
 
-  --color-yellow:       yellow;
-  --color-blue:         blue;
-  --color-black:        black;
-  --color-white:        white;
-
   --circle-pos-blue:    100px;
-  --circle-pos-white:   620px;
-  --circle-pos-black:   730px;
+  --circle-pos-white:   320px;
+  --circle-pos-black:   370px;
 
   position: relative;
 
   /* for testing */
-  display: none;
+  /* display: none; */
 }
 
 #flow__shape-layer-inner {
@@ -96,6 +95,9 @@
   height: var(--circle-size-white);
   background-color: var(--color-white);
   left: var(--circle-pos-white);
+  /* for centered text */
+  display: flex;
+  justify-content: center;
 }
 
 #flow__black-circle {
@@ -122,10 +124,18 @@
 
 /* focus and thesis titles */
 
+#flow__title-focus, #flow__title-thesis {
+  font-size: 18px;
+  font-weight: normal;
+  opacity: 0;
+}
+
+#flow__title-focus {
+  margin-top: 20px;
+}
+
 #flow__title-thesis {
   color: var(--color-white);
-  font-size: 18px;
-  opacity: 0;
 }
 
 
@@ -135,12 +145,12 @@
 #flow__text-layer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 40px;
+  grid-gap: 10px;
   grid-auto-rows: minmax(10px, auto);
 
   position: absolute;
   z-index: 99;
-  top: 0px;
+  top: 74px;
   left: 50%;
   transform: translateX(-50%);
   width: 850px;
@@ -151,12 +161,16 @@
 
 /* articles */
 
-#flow__text-layer p, #flow__text-layer h2 {
+#flow__text-layer p, #flow__text-layer h2, #flow__text-layer dl {
   margin: 0px;
 }
 
 #flow__text-layer h2 {
   font-size: 1em;
+}
+
+#flow__text-layer article dl dt {
+  font-weight: bold;
 }
 
 #flow__text-layer article dl dd {
@@ -182,6 +196,7 @@
 #flow__article-experiment {
   grid-area: 1 / 2;
   align-self: end;
+  /* color: var(--color-white); */
 }
 
 #flow__article-year {
@@ -208,10 +223,19 @@
   grid-area: 4 / 2;
 }
 
+#flow__article-majors dl#flow__list-title-minors {
+  margin-top: 1em
+}
+
 #flow__article-areas {
   grid-area: 4 / 3;
 }
 
 #flow__article-thesis {
   grid-area: 4 / 4  ;
+  margin-top: 20px;
+}
+
+#flow__article-thesis span {
+  font-weight: bold;
 }

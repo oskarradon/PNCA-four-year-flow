@@ -9,20 +9,31 @@ function animate() {
   let black = document.getElementById( 'flow__black-circle' );
 
   // titles
+  let focusTitle = document.getElementById( 'flow__title-focus' );
   let thesisTitle = document.getElementById( 'flow__title-thesis' );
+
+  // column one
+
+  let columnOne = [
+    document.getElementById( 'flow__article-explore' ),
+    document.getElementById( 'flow__article-year' ),
+    document.getElementById( 'flow__article-year-one' ),
+    document.getElementById( 'flow__article-foundation' ),
+  ]
 
   // other objects
   let line = document.getElementById( 'flow__line' );
 
 
   tl.add( TweenLite.to( blue, 2, { left: 280 } ),
-          TweenLite.to( white, 2, { left: 820 } ),
-          TweenLite.to( black, 2, { left: 850 } ),
-         );
+          TweenLite.to( white, 2, { left: 740 } ),
+          TweenLite.to( black, 2, { left: 790 } ),
+          TweenLite.to( line, 2, { left: 130, width: 660 } ),
+          // delay 2
 
-  tl.add( TweenLite.to( thesisTitle, 1, { opacity: 1 } ),
-          TweenLite.to( line, 2, { left: 100, width: 900 } )
-        );
+          TweenLite.to( focusTitle, 1, { opacity: 1 } ),
+          TweenLite.to( thesisTitle, 1, { opacity: 1 } ),
+         );
 }
 
-setTimeout( () => { animate() }, 1000 );
+setTimeout( () => { animate() }, 600 );
