@@ -118,7 +118,6 @@ body, html {
 .flow__circle-yellow {
   width: var(--circle-size-yellow);
   height: var(--circle-size-yellow);
-  max-width: 400px;
   background-color: var(--color-yellow);
 }
 
