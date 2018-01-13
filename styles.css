@@ -1,3 +1,21 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Table of contents:
+
+FONTS
+CONTAINER
+SHAPE LAYER
+TEXT LAYER
+MEDIA QUERY
+  CONTAINER-LG
+  SHAPE LAYER-LG
+  TEXT LAYER-LG
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+
+
 /* FONTS */
 
 
@@ -45,12 +63,6 @@ body, html {
   height: 3000px;
 }
 
-@media screen and (min-width: 768px) {
-  .flow__container {
-    height: 1038px;
-  }
-}
-
 
 /* SHAPE LAYER */
 
@@ -95,23 +107,6 @@ body, html {
   position: absolute;
 }
 
-@media screen and (min-width: 768px) {
-  .flow__shape-layer {
-    top: 75px;
-  }
-
-  .flow__shape-layer-inner {
-    display: block;
-    position: absolute;
-    height: 800px;
-    width: 920px;
-    top: 50%;
-    left: 50%;
-    margin: 0 auto;
-    transform: translateX(-50%);
-  }
-}
-
 .flow__circle-yellow {
   width: var(--circle-size-yellow);
   height: var(--circle-size-yellow);
@@ -153,39 +148,6 @@ body, html {
   top: var(--circle-pos-black);
 }
 
-@media screen and (min-width: 768px) {
-  .flow__circle {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .flow__circle-yellow {
-    width: var(--circle-size-yellow--lg);
-    height: var(--circle-size-yellow--lg);
-  }
-
-  .flow__circle-blue {
-    width: var(--circle-size-blue--lg);
-    height: var(--circle-size-blue--lg);
-
-    left: var(--circle-pos-blue--lg);
-  }
-
-  .flow__circle-white {
-    width: var(--circle-size-white--lg);
-    height: var(--circle-size-white--lg);
-
-    left: var(--circle-pos-white--lg);
-  }
-
-  .flow__circle-black {
-    width: var(--circle-size-black--lg);
-    height: var(--circle-size-black--lg);
-
-    left: var(--circle-pos-black--lg);
-  }
-}
-
 /* other objects */
 
 .flow__line {
@@ -225,19 +187,6 @@ body, html {
   /* display: none; */
 }
 
-@media screen and (min-width: 768px) {
-  .flow__text-layer {
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(10px, auto);
-
-    position: absolute;
-    top: calc(99px + 50px);
-    left: calc(50% + 57px);
-    transform: translateX(-50%);
-    width: 850px;
-  }
-}
 
 /* articles */
 
@@ -261,17 +210,102 @@ body, html {
   -webkit-margin-start: 0px;
 }
 
-/*
-  Note: grid-area is a shorthand property for grid-row-start, grid-column-start, grid-row-end and grid-column-end.
-
-  It is used here to hard code the articles positions, which row and column they are on. The end values are not used because each article element is only ever one fr unit wide.
- */
 
 .flow__article-thesis span {
   font-weight: bold;
 }
 
+
+/* MEDIA QUERY */
+
+
 @media screen and (min-width: 768px) {
+
+
+  /* CONTAINER-LG */
+
+
+  .flow__container {
+    height: 1038px;
+  }
+
+
+  .flow__shape-layer {
+    top: 75px;
+  }
+
+  .flow__shape-layer-inner {
+    display: block;
+    position: absolute;
+    height: 800px;
+    width: 920px;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    transform: translateX(-50%);
+  }
+
+
+  /* SHAPE LAYER-LG */
+
+
+  .flow__circle {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .flow__circle-yellow {
+    width: var(--circle-size-yellow--lg);
+    height: var(--circle-size-yellow--lg);
+  }
+
+  .flow__circle-blue {
+    width: var(--circle-size-blue--lg);
+    height: var(--circle-size-blue--lg);
+
+    left: var(--circle-pos-blue--lg);
+  }
+
+  .flow__circle-white {
+    width: var(--circle-size-white--lg);
+    height: var(--circle-size-white--lg);
+
+    left: var(--circle-pos-white--lg);
+  }
+
+  .flow__circle-black {
+    width: var(--circle-size-black--lg);
+    height: var(--circle-size-black--lg);
+
+    left: var(--circle-pos-black--lg);
+  }
+
+
+  /* TEXT LAYER-LG */
+
+
+  .flow__text-layer {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(10px, auto);
+
+    position: absolute;
+    top: calc(99px + 50px);
+    left: calc(50% + 57px);
+    transform: translateX(-50%);
+    width: 850px;
+  }
+
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+  Note:
+
+  Grid-area is a shorthand property for grid-row-start, grid-column-start, grid-row-end and grid-column-end.
+  It is used here to hard code the articles positions, which row and column they are on.
+  The end values are not used because each article element is only ever one fr unit wide.
+
+  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
   .flow__article-explore {
     grid-area: 1 / 1;
     align-self: end;
