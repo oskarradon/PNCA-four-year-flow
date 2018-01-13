@@ -43,10 +43,10 @@ function animate() {
   console.log(width);
 
   if ( width > 768 ) {
-    tl.add( TweenLite.to( blue, 2, { left: 260 } ),
-            TweenLite.to( white, 2, { left: 720 } ),
-            TweenLite.to( black, 2, { left: 770 } ),
-            TweenLite.to( line, 2, { left: 92, width: 680 } ),
+    tl.add( TweenLite.to( blue, 2, { left: 230 } ),
+            TweenLite.to( white, 2, { left: 690 } ),
+            TweenLite.to( black, 2, { left: 740 } ),
+            TweenLite.to( line, 2, { left: 92, width: 650 } ),
 
             new TimelineLite().staggerTo( columnOne, 2, { delay: 2, opacity: 1 }, .3 ),
 
