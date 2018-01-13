@@ -230,6 +230,9 @@ body, html {
   }
 
 
+  /* SHAPE LAYER-LG */
+
+
   .flow__shape-layer {
     top: 75px;
   }
@@ -244,10 +247,6 @@ body, html {
     margin: 0 auto;
     transform: translateX(-50%);
   }
-
-
-  /* SHAPE LAYER-LG */
-
 
   .flow__circle {
     top: 50%;

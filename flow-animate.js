@@ -36,8 +36,8 @@ function animate() {
   let line = document.querySelector( '.flow__line' );
 
   // reset the animation
-  tl.pause(0);
-  tl.clear();
+  // tl.pause(0); NOT WORKING >:(
+  // tl.clear();
 
   let width = window.innerWidth;
   console.log(width);
