@@ -61,6 +61,7 @@ body, html {
   background-color: var(--color-background);
   font-family: "DIN Next LT Pro";
   height: 3000px;
+  width: 100%;
 }
 
 
@@ -71,8 +72,8 @@ body, html {
 
   /* variables */
 
-  --circle-size-yellow:         110vw;
-  --circle-size-blue:           90vw;
+  --circle-size-yellow:         98vw;
+  --circle-size-blue:           95vw;
   --circle-size-white:          200px;
   --circle-size-black:          100px;
 
@@ -83,8 +84,8 @@ body, html {
 
   --circle-pos-yellow:          20px;
   --circle-pos-blue:            110px;
-  --circle-pos-white:           180px;
-  --circle-pos-black:           230px;
+  --circle-pos-white:           50vw;
+  --circle-pos-black:           calc(50vw + 50px);
 
   --circle-pos-blue--lg:        70px;
   --circle-pos-white--lg:       320px;
