@@ -4,6 +4,7 @@ function animate() {
   // OBJECTS
 
   // circles
+  let yellow = document.querySelector( '.flow__circle-yellow' );
   let blue = document.querySelector( '.flow__circle-blue' );
   let white = document.querySelector( '.flow__circle-white' );
   let black = document.querySelector( '.flow__circle-black' );
@@ -56,7 +57,23 @@ function animate() {
 
             new TimelineLite().staggerTo( columnFour, 2, { delay: 4., opacity: 1 }, .3 )
           );
+  } else {
+    tl.add( TweenLite.to( yellow, 2, { height: 1400 } ),
+            TweenLite.to( blue, 2, { top: 450, height: 1200 } ),
+            TweenLite.to( white, 2, { top: 1320 } ),
+            TweenLite.to( black, 2, { top: 1370 } ),
+            // TweenLite.to( line, 2, { top: 92, width: 650 } ),
+            //
+            // new TimelineLite().staggerTo( columnOne, 2, { delay: 2, opacity: 1 }, .3 ),
+            //
+            // new TimelineLite().staggerTo( columnTwo, 2, { delay: 3, opacity: 1 }, .3 ),
+            //
+            // TweenLite.to( columnThree, 1, { delay: 4, opacity: 1 } ),
+            //
+            // new TimelineLite().staggerTo( columnFour, 2, { delay: 4., opacity: 1 }, .3 )
+          );
   }
+
 };
 
 setTimeout( () => { animate() }, 600 );

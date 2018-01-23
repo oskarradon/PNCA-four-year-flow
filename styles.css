@@ -82,7 +82,7 @@ body, html {
   --circle-size-white--lg:      200px;
   --circle-size-black--lg:      100px;
 
-  --circle-pos-yellow:          20px;
+  --circle-pos-yellow:          10px;
   --circle-pos-blue:            110px;
   --circle-pos-white:           100vw;
   --circle-pos-black:           calc(100vw + 50px);
@@ -185,7 +185,7 @@ body, html {
 .flow__text-layer {
   display: grid;
   position: absolute;
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: 50px minmax(80px, 260px);
   padding: 20px 20px 0px 20px;
 
   /* for testing */
