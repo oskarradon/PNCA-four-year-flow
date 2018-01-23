@@ -207,7 +207,7 @@ body, html {
 }
 
 
-.flow__article-thesis span {
+article span {
   font-weight: bold;
 }
 
@@ -221,19 +221,9 @@ The end values are not used because each article element is only ever one fr uni
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-.flow__article-explore {
-  grid-area: 2 / 2;
-  margin-top: -22px;
-}
-
 .flow__article-explore h1, .flow__article-experiment h1, .flow__article-thesis h1 {
   font-size: 1.8em;
   margin-bottom: .1em;
-}
-
-.flow__article-experiment {
-  grid-area: 4 / 2;
-  margin-top: 26px;
 }
 
 .flow__article-year {
@@ -245,14 +235,29 @@ The end values are not used because each article element is only ever one fr uni
   align-self: start;
 }
 
+.flow__article-explore {
+  grid-area: 2 / 2;
+  margin-top: -22px;
+}
+
 .flow__article-year-two {
+  grid-area: 3 / 1;
+  margin-top: 30px;
+}
+
+.flow__article-experiment {
+  grid-area: 3 / 2;
+  margin-top: 26px;
+}
+
+.flow__article-year-four {
   grid-area: 4 / 1;
   margin-top: 30px;
 }
 
-.flow__article-year-four {
-  grid-area: 8 / 1;
-  margin-top: 30px;
+.flow__article-thesis {
+  grid-area: 4 / 2;
+  margin-top: 26px;
 }
 
 .flow__article-foundation {
@@ -274,11 +279,6 @@ The end values are not used because each article element is only ever one fr uni
   display: none;
 }
 
-.flow__article-thesis {
-  grid-area: 8 / 2;
-  margin-top: 26px;
-  /* margin-top: 30px; */
-}
 
 
 /* MEDIA QUERY */
