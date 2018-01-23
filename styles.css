@@ -231,12 +231,13 @@ The end values are not used because each article element is only ever one fr uni
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .flow__article-explore {
-  grid-area: 2 / 2
+  grid-area: 2 / 2;
+  margin-top: -22px;
 }
 
 .flow__article-explore h1, .flow__article-experiment h1 {
   font-size: 1.8em;
-  margin-bottom: .1em;
+  margin: 0px 0px .1em 0px;
 }
 
 .flow__article-experiment {
@@ -253,11 +254,11 @@ The end values are not used because each article element is only ever one fr uni
 }
 
 .flow__article-year-two {
-  grid-area: 3 / 1;
+  grid-area: 4 / 1;
 }
 
 .flow__article-year-four {
-  grid-area: 4 / 1;
+  grid-area: 8 / 1;
 }
 
 .flow__article-foundation {
@@ -265,7 +266,7 @@ The end values are not used because each article element is only ever one fr uni
 }
 
 .flow__article-majors {
-  grid-area: 4 / 2;
+  grid-area: 6 / 2;
 }
 
 .flow__article-majors dl.flow__list-title-minors {
@@ -273,12 +274,12 @@ The end values are not used because each article element is only ever one fr uni
 }
 
 .flow__article-areas {
-  grid-area: 5 / 2;
+  grid-area: 7 / 2;
 }
 
 .flow__article-thesis {
-  grid-area: 6 / 2;
-  margin-top: 30px;
+  grid-area: 8 / 2;
+  /* margin-top: 30px; */
 }
 
 
