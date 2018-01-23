@@ -62,7 +62,7 @@ function animate() {
             TweenLite.to( blue, 2, { top: 450, height: 1200 } ),
             TweenLite.to( white, 2, { top: 1320 } ),
             TweenLite.to( black, 2, { top: 1370 } ),
-            // TweenLite.to( line, 2, { top: 92, width: 650 } ),
+            TweenLite.to( line, 2, { opacity: 1, top: 23, height: 1360 } ),
             //
             // new TimelineLite().staggerTo( columnOne, 2, { delay: 2, opacity: 1 }, .3 ),
             //
