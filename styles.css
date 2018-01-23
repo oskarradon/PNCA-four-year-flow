@@ -261,13 +261,11 @@ The end values are not used because each article element is only ever one fr uni
 }
 
 .flow__article-foundation {
-  grid-area: 3 / 2;
-  display: none;
+  grid-area: 5 / 1 / 5 / 2;
 }
 
 .flow__article-majors {
-  grid-area: 6 / 2;
-  display: none;
+  grid-area: 6 / 1 / 6 / 2;
 }
 
 .flow__article-majors dl.flow__list-title-minors {
@@ -275,8 +273,7 @@ The end values are not used because each article element is only ever one fr uni
 }
 
 .flow__article-areas {
-  grid-area: 7 / 2;
-  display: none;
+  grid-area: 7 / 1 / 7 / 2;
 }
 
 
