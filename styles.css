@@ -73,7 +73,7 @@ body, html {
   /* variables */
 
   --circle-size-yellow:         198vw;
-  --circle-size-blue:           195vw;
+  --circle-size-blue:           145vw;
   --circle-size-white:          200px;
   --circle-size-black:          100px;
 
@@ -159,7 +159,7 @@ body, html {
   position: absolute;
   top: 15px;
   left: calc(50% + 10px);
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 /* focus and thesis titles */
@@ -264,10 +264,12 @@ The end values are not used because each article element is only ever one fr uni
 
 .flow__article-foundation {
   grid-area: 3 / 2;
+  display: none;
 }
 
 .flow__article-majors {
   grid-area: 6 / 2;
+  display: none;
 }
 
 .flow__article-majors dl.flow__list-title-minors {
@@ -276,6 +278,7 @@ The end values are not used because each article element is only ever one fr uni
 
 .flow__article-areas {
   grid-area: 7 / 2;
+  display: none;
 }
 
 .flow__article-thesis {
