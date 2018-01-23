@@ -76,8 +76,8 @@ body, html {
   --circle-size-white:          200px;
   --circle-size-black:          100px;
 
-  --circle-size-yellow--lg:     600px;
-  --circle-size-blue--lg:       470px;
+  --circle-size-yellow--lg:     800px;
+  --circle-size-blue--lg:       680px;
   --circle-size-white--lg:      200px;
   --circle-size-black--lg:      100px;
 
@@ -292,7 +292,7 @@ body, html {
     top: calc(99px + 10px);
     left: calc(50% + 11px);
     transform: translateX(-50%);
-    width: 760px;
+    width: 720px;
   }
 
   /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
