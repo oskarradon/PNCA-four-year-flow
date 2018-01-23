@@ -72,8 +72,8 @@ body, html {
 
   /* variables */
 
-  --circle-size-yellow:         600px;
-  --circle-size-blue:           450px;
+  --circle-size-yellow:         670px;
+  --circle-size-blue:           420px;
   --circle-size-white:          200px;
   --circle-size-black:          100px;
 
@@ -150,6 +150,12 @@ body, html {
   top: var(--circle-pos-black);
 }
 
+/* focus and thesis titles */
+
+.flow__title-focus, .flow__title-thesis {
+  opacity: 0;
+}
+
 /* other objects */
 
 .flow__line {
@@ -183,7 +189,7 @@ body, html {
   /* opacity: 0; */
 }
 
-.flow__text-layer p, .flow__text-layer h2, .flow__text-layer dl {
+.flow__text-layer p, .flow__text-layer h2, .flow__text-layer dl, .flow__text-layer h1 {
   margin: 0px;
 }
 
@@ -219,14 +225,14 @@ The end values are not used because each article element is only ever one fr uni
   margin-top: -22px;
 }
 
-.flow__article-explore h1, .flow__article-experiment h1 {
+.flow__article-explore h1, .flow__article-experiment h1, .flow__article-thesis h1 {
   font-size: 1.8em;
-  margin: 0px 0px .1em 0px;
+  margin-bottom: .1em;
 }
 
 .flow__article-experiment {
   grid-area: 4 / 2;
-  margin-top: 30px;
+  margin-top: 26px;
 }
 
 .flow__article-year {
@@ -269,7 +275,7 @@ The end values are not used because each article element is only ever one fr uni
 
 .flow__article-thesis {
   grid-area: 8 / 2;
-  margin-top: 130px;
+  margin-top: 26px;
   /* margin-top: 30px; */
 }
 
@@ -353,6 +359,10 @@ The end values are not used because each article element is only ever one fr uni
   .flow__title-thesis {
     color: var(--color-white);
     margin-left: 0px;
+  }
+
+  .flow__article-thesis h1 {
+    display: none;
   }
 
   /* other objects */
