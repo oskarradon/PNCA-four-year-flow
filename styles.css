@@ -72,8 +72,8 @@ body, html {
 
   /* variables */
 
-  --circle-size-yellow:         198vw;
-  --circle-size-blue:           145vw;
+  --circle-size-yellow:         600px;
+  --circle-size-blue:           450px;
   --circle-size-white:          200px;
   --circle-size-black:          100px;
 
@@ -84,8 +84,8 @@ body, html {
 
   --circle-pos-yellow:          10px;
   --circle-pos-blue:            110px;
-  --circle-pos-white:           100vw;
-  --circle-pos-black:           calc(100vw + 50px);
+  --circle-pos-white:           200px;
+  --circle-pos-black:           250px;
 
   --circle-pos-blue--lg:        70px;
   --circle-pos-white--lg:       320px;
@@ -162,23 +162,6 @@ body, html {
   /* opacity: 0; */
 }
 
-/* focus and thesis titles */
-
-.flow__title-focus, .flow__title-thesis {
-  font-size: 18px;
-  font-weight: normal;
-  opacity: 0;
-}
-
-.flow__title-focus {
-  margin-top: 20px;
-  font-weight: bold;
-}
-
-.flow__title-thesis {
-  color: var(--color-white);
-}
-
 
 /* TEXT LAYER */
 
@@ -243,6 +226,7 @@ The end values are not used because each article element is only ever one fr uni
 
 .flow__article-experiment {
   grid-area: 4 / 2;
+  margin-top: 30px;
 }
 
 .flow__article-year {
@@ -256,10 +240,12 @@ The end values are not used because each article element is only ever one fr uni
 
 .flow__article-year-two {
   grid-area: 4 / 1;
+  margin-top: 30px;
 }
 
 .flow__article-year-four {
   grid-area: 8 / 1;
+  margin-top: 30px;
 }
 
 .flow__article-foundation {
@@ -283,6 +269,7 @@ The end values are not used because each article element is only ever one fr uni
 
 .flow__article-thesis {
   grid-area: 8 / 2;
+  margin-top: 130px;
   /* margin-top: 30px; */
 }
 
@@ -348,6 +335,24 @@ The end values are not used because each article element is only ever one fr uni
     height: var(--circle-size-black--lg);
 
     left: var(--circle-pos-black--lg);
+  }
+
+  /* focus and thesis titles */
+
+  .flow__title-focus, .flow__title-thesis {
+    font-size: 18px;
+    font-weight: normal;
+    font-weight: bold;
+    opacity: 0;
+  }
+
+  .flow__title-focus {
+    margin-left: 0px;
+  }
+
+  .flow__title-thesis {
+    color: var(--color-white);
+    margin-left: 0px;
   }
 
   /* other objects */

@@ -58,11 +58,10 @@ function animate() {
             new TimelineLite().staggerTo( columnFour, 2, { delay: 4., opacity: 1 }, .3 )
           );
   } else {
-    tl.add( TweenLite.to( yellow, 2, { height: 1400 } ),
-            TweenLite.to( blue, 2, { top: 220 } ),
-            // TweenLite.to( white, 2, { top: 1320 } ),
-            // TweenLite.to( black, 2, { top: 1370 } ),
-            // TweenLite.to( line, 2, { top: 23, height: 1360 } ),
+    tl.add( TweenLite.to( blue, 2, { top: 220 } ),
+            TweenLite.to( white, 2, { top: 398 } ),
+            TweenLite.to( black, 2, { top: 448 } ),
+            TweenLite.to( line, 2, { top: 23, height: 440 } ),
             //
             // new TimelineLite().staggerTo( columnOne, 2, { delay: 2, opacity: 1 }, .3 ),
             //
