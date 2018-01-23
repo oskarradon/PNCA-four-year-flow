@@ -72,8 +72,8 @@ body, html {
 
   /* variables */
 
-  --circle-size-yellow:         98vw;
-  --circle-size-blue:           95vw;
+  --circle-size-yellow:         198vw;
+  --circle-size-blue:           195vw;
   --circle-size-white:          200px;
   --circle-size-black:          100px;
 
@@ -84,8 +84,8 @@ body, html {
 
   --circle-pos-yellow:          20px;
   --circle-pos-blue:            110px;
-  --circle-pos-white:           50vw;
-  --circle-pos-black:           calc(50vw + 50px);
+  --circle-pos-white:           100vw;
+  --circle-pos-black:           calc(100vw + 50px);
 
   --circle-pos-blue--lg:        70px;
   --circle-pos-white--lg:       320px;
@@ -101,6 +101,7 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: translateX(-50%);
 }
 
 .flow__circle {
@@ -183,6 +184,9 @@ body, html {
 
 .flow__text-layer {
   display: grid;
+  position: absolute;
+  grid-template-columns: 50px 1fr;
+  padding: 20px 20px 0px 20px;
 
   /* for testing */
   /* display: none; */
@@ -192,7 +196,7 @@ body, html {
 /* articles */
 
 .flow__text-layer article {
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .flow__text-layer p, .flow__text-layer h2, .flow__text-layer dl {
@@ -214,6 +218,67 @@ body, html {
 
 .flow__article-thesis span {
   font-weight: bold;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Note:
+
+Grid-area is a shorthand property for grid-row-start, grid-column-start, grid-row-end and grid-column-end.
+It is used here to hard code the articles positions, which row and column they are on.
+The end values are not used because each article element is only ever one fr unit wide.
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.flow__article-explore {
+  grid-area: 2 / 2
+}
+
+.flow__article-explore h1, .flow__article-experiment h1 {
+  font-size: 1.8em;
+  margin-bottom: .1em;
+}
+
+.flow__article-experiment {
+  grid-area: 4 / 2;
+}
+
+.flow__article-year {
+  grid-area: 1 / 1;
+}
+
+.flow__article-year-one {
+  grid-area: 2 / 1;
+  align-self: start;
+}
+
+.flow__article-year-two {
+  grid-area: 3 / 1;
+}
+
+.flow__article-year-four {
+  grid-area: 4 / 1;
+}
+
+.flow__article-foundation {
+  grid-area: 3 / 2;
+}
+
+.flow__article-majors {
+  grid-area: 4 / 2;
+}
+
+.flow__article-majors dl.flow__list-title-minors {
+  margin-top: 1em
+}
+
+.flow__article-areas {
+  grid-area: 5 / 2;
+}
+
+.flow__article-thesis {
+  grid-area: 6 / 2;
+  margin-top: 30px;
 }
 
 
@@ -289,22 +354,13 @@ body, html {
     grid-gap: 10px;
     grid-auto-rows: minmax(10px, auto);
 
-    position: absolute;
     top: calc(99px + 10px);
     left: calc(50% + 11px);
     transform: translateX(-50%);
     width: 720px;
   }
 
-  /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-
-  Note:
-
-  Grid-area is a shorthand property for grid-row-start, grid-column-start, grid-row-end and grid-column-end.
-  It is used here to hard code the articles positions, which row and column they are on.
-  The end values are not used because each article element is only ever one fr unit wide.
-
-  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+  /* articles */
 
   .flow__article-explore {
     grid-area: 1 / 1;
