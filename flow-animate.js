@@ -28,11 +28,8 @@ function animate() {
   let titleFocus = document.querySelector( '.flow__title-focus' );
   let titleThesis = document.querySelector( '.flow__title-thesis' );
 
-
-  // FOR LG SCREEN SIZES
-
   // columns
-
+  // (these are for the large screen size layout, a TimelineLite will iterate through the array to stagger the objects within appearing)
   let columnOne = [
     articleExplore,
     articleYear,
@@ -55,13 +52,7 @@ function animate() {
     articleThesis
   ]
 
-
-  // reset the animation
-  // tl.pause(0); NOT WORKING >:(
-  // tl.clear();
-
-  let width = window.innerWidth;
-  console.log(width);
+  let width = window.innerWidth; // this is used to animate the elements differently based on the screen size
 
   if ( width > 768 ) {
     tl.add( TweenLite.to( blue, 2, { left: 230 } ),
