@@ -38,23 +38,14 @@ function animate() {
 
   // ROWS
 
-  let rowOne = [
+  let rows = [
     articleYear,
     articleYearOne,
-    articleExplore
-  ]
-
-  let rowTwo = [
+    articleExplore,
     articleYearTwo,
-    articleExperiment
-  ]
-
-  let rowThree = [
+    articleExperiment,
     articleYearFour,
-    articleThesis
-  ]
-
-  let rowFour = [
+    articleThesis,
     articleFoundation,
     articleMajors,
     articleAreas
@@ -98,14 +89,8 @@ function animate() {
             TweenLite.to( white, 2, { top: 458 } ),
             TweenLite.to( black, 2, { top: 508 } ),
             TweenLite.to( line, 2, { top: 23, height: 490 } ),
-            //
-            // new TimelineLite().staggerTo( columnOne, 2, { delay: 2, opacity: 1 }, .3 ),
-            //
-            // new TimelineLite().staggerTo( columnTwo, 2, { delay: 3, opacity: 1 }, .3 ),
-            //
-            // TweenLite.to( columnThree, 1, { delay: 4, opacity: 1 } ),
-            //
-            // new TimelineLite().staggerTo( columnFour, 2, { delay: 4., opacity: 1 }, .3 )
+
+            new TimelineLite().staggerTo( rows, 2, { delay: 2, opacity: 1 }, .3 )
           );
   } else {
     tl.add( TweenLite.to( blue, 2, { left: 230 } ),
