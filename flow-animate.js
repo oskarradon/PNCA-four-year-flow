@@ -121,7 +121,7 @@ function animate() {
 
 setTimeout( () => { animate() }, 600 );
 
-// not working - this would just reset and reset the animation if someone was showing off the responsiveness
+
 // window.addEventListener( "resize", () => {
-//   animate();
+//   let width = window.innerWidth;
 // });
