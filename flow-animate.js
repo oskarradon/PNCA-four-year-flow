@@ -89,6 +89,8 @@ function animate() {
 
   let width = window.innerWidth; // this is used to animate the elements differently based on the screen size
 
+  let blackCircleBoundingRect = black.getBoundingClientRect()
+  console.log(blackCircleBoundingRect.top, blackCircleBoundingRect.right, blackCircleBoundingRect.bottom, blackCircleBoundingRect.left );
 
   // ANIMATION
 
