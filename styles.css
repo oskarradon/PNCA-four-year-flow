@@ -187,7 +187,7 @@ body, html {
 /* articles */
 
 .flow__text-layer article {
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .flow__text-layer p, .flow__text-layer h2, .flow__text-layer dl, .flow__text-layer h1 {
@@ -216,8 +216,6 @@ body, html {
 .flow__text-layer article dl dd:last-of-type {
   padding-bottom: 0px;
 }
-
-
 
 article span {
   font-weight: bold;
