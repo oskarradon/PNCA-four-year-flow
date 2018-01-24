@@ -105,7 +105,7 @@ function animate() {
     tl.add( TweenLite.to( blue, 2, { left: 230 } ),
             TweenLite.to( white, 2, { left: 690 } ),
             TweenLite.to( black, 2, { left: 740 } ),
-            TweenLite.to( line, 2, { left: 110, width: 630 } ),
+            TweenLite.to( line, 2, { left: 20, width: 720 } ),
 
             new TimelineLite().staggerTo( columnOne, 2, { delay: 2, opacity: 1 }, .3 ),
 
