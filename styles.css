@@ -205,12 +205,18 @@ body, html {
 .flow__text-layer article dl dt {
   font-weight: bold;
   font-size: 1.8em;
+  margin-bottom: .1em;
 }
 
 .flow__text-layer article dl dd {
   -webkit-margin-start: 0px;
   padding-bottom: .15em;
 }
+
+.flow__text-layer article dl dd:last-of-type {
+  padding-bottom: 0px;
+}
+
 
 
 article span {
@@ -269,15 +275,20 @@ The end values are not used because each article element is only ever one fr uni
 /* lower area */
 
 .flow__article-foundation {
-  grid-area: 5 / 1 / 5 / 2;-
+  grid-area: 5 / 1 / 5 / 2;
+  margin-top: 80px;
+}
+
+article dl dt {
+  padding-right: 20px;
 }
 
 .flow__article-majors {
   grid-area: 6 / 1 / 6 / 2;
 }
 
-.flow__article-majors dl.flow__list-title-minors {
-  margin-top: 1em
+.flow__article-majors, .flow__article-majors dl.flow__list-title-minors, .flow__article-areas {
+  margin-top: 26px;
 }
 
 .flow__article-areas {
@@ -399,7 +410,12 @@ The end values are not used because each article element is only ever one fr uni
     font-size: 1em;
   }
 
+  .flow__article-foundation dl dd, .flow__article-majors dl dd {
+    text-transform: uppercase;
+  }
+
   /* articles */
+
 
   .flow__article-explore {
     grid-area: 1 / 1;
