@@ -57,7 +57,7 @@ body, html {
   --color-white:                white;
 
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 
   background-color: var(--color-background);
   font-family: "DIN Next LT Pro";
@@ -85,8 +85,8 @@ body, html {
 
   --circle-pos-yellow:          10px;
   --circle-pos-blue:            110px;
-  --circle-pos-white:           200px;
-  --circle-pos-black:           250px;
+  --circle-pos-white:           225px;
+  --circle-pos-black:           275px;
 
   --circle-pos-blue--lg:        70px;
   --circle-pos-white--lg:       320px;
@@ -293,6 +293,7 @@ article dl dt {
 
 .flow__article-areas {
   grid-area: 7 / 1 / 7 / 2;
+  margin-bottom: 60px;
 }
 
 
