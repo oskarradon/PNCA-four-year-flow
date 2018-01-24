@@ -9,32 +9,52 @@ function animate() {
   let white = document.querySelector( '.flow__circle-white' );
   let black = document.querySelector( '.flow__circle-black' );
 
+  // other objects
+  let line = document.querySelector( '.flow__line' );
+
+  // articles
+  let articleExplore = document.querySelector( '.flow__article-explore' );
+  let articleYear = document.querySelector( '.flow__article-year' );
+  let articleYearOne = document.querySelector( '.flow__article-year-one' );
+  let articleFoundation = document.querySelector( '.flow__article-foundation' );
+  let articleExperiment = document.querySelector( '.flow__article-experiment' );
+  let articleYearTwo = document.querySelector( '.flow__article-year-two' );
+  let articleMajors = document.querySelector( '.flow__article-majors' );
+  let articleAreas = document.querySelector( '.flow__article-areas' );
+  let articleYearFour = document.querySelector( '.flow__article-year-four' );
+  let articleThesis = document.querySelector( '.flow__article-thesis' )
+
+  // titles
+  let titleFocus = document.querySelector( '.flow__title-focus' );
+  let titleThesis = document.querySelector( '.flow__title-thesis' );
+
+
+  // FOR LG SCREEN SIZES
+
   // columns
 
   let columnOne = [
-    document.querySelector( '.flow__article-explore' ),
-    document.querySelector( '.flow__article-year' ),
-    document.querySelector( '.flow__article-year-one' ),
-    document.querySelector( '.flow__article-foundation' ),
+    articleExplore,
+    articleYear,
+    articleYearOne,
+    articleFoundation
   ];
 
   let columnTwo = [
-    document.querySelector( '.flow__article-experiment' ),
-    document.querySelector( '.flow__article-year-two' ),
-    document.querySelector( '.flow__article-majors' ),
+    articleExperiment,
+    articleYearTwo,
+    articleMajors
   ];
 
-  let columnThree = document.querySelector( '.flow__article-areas' );
+  // column three is just articleAreas
 
   let columnFour = [
-    document.querySelector( '.flow__article-year-four' ),
-    document.querySelector( '.flow__title-focus' ),
-    document.querySelector( '.flow__title-thesis' ),
-    document.querySelector( '.flow__article-thesis' )
+    articleYearFour,
+    titleFocus,
+    titleThesis,
+    articleThesis
   ]
 
-  // other objects
-  let line = document.querySelector( '.flow__line' );
 
   // reset the animation
   // tl.pause(0); NOT WORKING >:(
@@ -53,7 +73,7 @@ function animate() {
 
             new TimelineLite().staggerTo( columnTwo, 2, { delay: 3, opacity: 1 }, .3 ),
 
-            TweenLite.to( columnThree, 1, { delay: 4, opacity: 1 } ),
+            TweenLite.to( articleAreas, 1, { delay: 4, opacity: 1 } ),
 
             new TimelineLite().staggerTo( columnFour, 2, { delay: 4., opacity: 1 }, .3 )
           );
