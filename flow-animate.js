@@ -3,16 +3,16 @@ function animate() {
 
   // OBJECTS
 
-  // circles
+  // SHAPES
+
   let yellow = document.querySelector( '.flow__circle-yellow' );
   let blue = document.querySelector( '.flow__circle-blue' );
   let white = document.querySelector( '.flow__circle-white' );
   let black = document.querySelector( '.flow__circle-black' );
-
-  // other objects
   let line = document.querySelector( '.flow__line' );
 
-  // articles
+  // ARTICLES
+
   let articleExplore = document.querySelector( '.flow__article-explore' );
   let articleYear = document.querySelector( '.flow__article-year' );
   let articleYearOne = document.querySelector( '.flow__article-year-one' );
@@ -24,12 +24,17 @@ function animate() {
   let articleYearFour = document.querySelector( '.flow__article-year-four' );
   let articleThesis = document.querySelector( '.flow__article-thesis' )
 
-  // titles
+  // TITLES
+
   let titleFocus = document.querySelector( '.flow__title-focus' );
   let titleThesis = document.querySelector( '.flow__title-thesis' );
 
-  // columns
+  // ROWS
+
+  // COLUMNS
+
   // (these are for the large screen size layout, a TimelineLite will iterate through the array to stagger the objects within appearing)
+
   let columnOne = [
     articleExplore,
     articleYear,
@@ -52,7 +57,12 @@ function animate() {
     articleThesis
   ]
 
+
   let width = window.innerWidth; // this is used to animate the elements differently based on the screen size
+
+
+  // ANIMATION
+
 
   if ( width < 768 ) {
     tl.add( TweenLite.to( blue, 2, { top: 250 } ),
@@ -88,7 +98,7 @@ function animate() {
 
 setTimeout( () => { animate() }, 600 );
 
-// not working
+// not working - this would just reset and reset the animation if someone was showing off the responsiveness
 // window.addEventListener( "resize", () => {
 //   animate();
 // });
