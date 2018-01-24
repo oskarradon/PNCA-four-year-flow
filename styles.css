@@ -186,7 +186,11 @@ body, html {
 
 /* articles */
 
-.flow__text-layer article {
+.flow__article-explore > *, .flow__article-experiment > *, .flow__article-thesis > * {
+  opacity: 0;
+}
+
+.flow__article-foundation, .flow__article-majors, .flow__article-areas, .flow__article-year, .flow__article-year-one, .flow__article-year-two, .flow__article-year-four {
   opacity: 0;
 }
 
@@ -415,6 +419,13 @@ article dl dt {
 
   /* articles */
 
+  .flow__article-explore > *, .flow__article-experiment > *, .flow__article-thesis > * {
+    opacity: 1;
+  }
+
+  .flow__text-layer article {
+    opacity: 0;
+  }
 
   .flow__article-explore {
     grid-area: 1 / 1;
