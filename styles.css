@@ -200,6 +200,7 @@ body, html {
 
 .flow__text-layer article dl dt {
   font-weight: bold;
+  font-size: 1.8em;
 }
 
 .flow__text-layer article dl dd {
@@ -209,10 +210,6 @@ body, html {
 
 article span {
   font-weight: bold;
-}
-
-article dt {
-  font-size: 1.8em;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -268,11 +265,6 @@ The end values are not used because each article element is only ever one fr uni
 
 .flow__article-foundation {
   grid-area: 5 / 1 / 5 / 2;-
-}
-
-.flow__article-foundation dl {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 .flow__article-majors {
