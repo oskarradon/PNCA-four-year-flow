@@ -221,11 +221,11 @@ body, html {
   padding-bottom: 0px;
 }
 
-article span {
+.flow__text-layer article span {
   font-weight: bold;
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+/*
 
 Note:
 
@@ -233,7 +233,7 @@ Grid-area is a shorthand property for grid-row-start, grid-column-start, grid-ro
 It is used here to hard code the articles positions, which row and column they are on.
 The end values are not used because each article element is only ever one fr unit wide.
 
-* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+*/
 
 .flow__article-explore h1, .flow__article-experiment h1, .flow__article-thesis h1 {
   font-size: 1.8em;
@@ -300,7 +300,9 @@ article dl dt {
 
 
 
-/* MEDIA QUERY */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+MEDIA QUERY
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 
 @media screen and (min-width: 768px) {
