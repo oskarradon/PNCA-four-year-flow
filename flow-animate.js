@@ -54,21 +54,7 @@ function animate() {
 
   let width = window.innerWidth; // this is used to animate the elements differently based on the screen size
 
-  if ( width > 768 ) {
-    tl.add( TweenLite.to( blue, 2, { left: 230 } ),
-            TweenLite.to( white, 2, { left: 690 } ),
-            TweenLite.to( black, 2, { left: 740 } ),
-            TweenLite.to( line, 2, { left: 92, width: 650 } ),
-
-            new TimelineLite().staggerTo( columnOne, 2, { delay: 2, opacity: 1 }, .3 ),
-
-            new TimelineLite().staggerTo( columnTwo, 2, { delay: 3, opacity: 1 }, .3 ),
-
-            TweenLite.to( articleAreas, 1, { delay: 4, opacity: 1 } ),
-
-            new TimelineLite().staggerTo( columnFour, 2, { delay: 4., opacity: 1 }, .3 )
-          );
-  } else {
+  if ( width < 768 ) {
     tl.add( TweenLite.to( blue, 2, { top: 250 } ),
             TweenLite.to( white, 2, { top: 458 } ),
             TweenLite.to( black, 2, { top: 508 } ),
@@ -82,12 +68,27 @@ function animate() {
             //
             // new TimelineLite().staggerTo( columnFour, 2, { delay: 4., opacity: 1 }, .3 )
           );
+  } else {
+    tl.add( TweenLite.to( blue, 2, { left: 230 } ),
+            TweenLite.to( white, 2, { left: 690 } ),
+            TweenLite.to( black, 2, { left: 740 } ),
+            TweenLite.to( line, 2, { left: 92, width: 650 } ),
+
+            new TimelineLite().staggerTo( columnOne, 2, { delay: 2, opacity: 1 }, .3 ),
+
+            new TimelineLite().staggerTo( columnTwo, 2, { delay: 3, opacity: 1 }, .3 ),
+
+            TweenLite.to( articleAreas, 1, { delay: 4, opacity: 1 } ),
+
+            new TimelineLite().staggerTo( columnFour, 2, { delay: 4., opacity: 1 }, .3 )
+          );
   }
 
 };
 
 setTimeout( () => { animate() }, 600 );
 
-window.addEventListener( "resize", () => {
-  animate();
-});
+// not working
+// window.addEventListener( "resize", () => {
+//   animate();
+// });
