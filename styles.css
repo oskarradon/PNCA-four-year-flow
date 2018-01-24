@@ -211,6 +211,10 @@ article span {
   font-weight: bold;
 }
 
+article dt {
+  font-size: 1.8em;
+}
+
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 Note:
@@ -260,8 +264,15 @@ The end values are not used because each article element is only ever one fr uni
   margin-top: 26px;
 }
 
+/* lower area */
+
 .flow__article-foundation {
-  grid-area: 5 / 1 / 5 / 2;
+  grid-area: 5 / 1 / 5 / 2;-
+}
+
+.flow__article-foundation dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .flow__article-majors {
@@ -385,6 +396,10 @@ The end values are not used because each article element is only ever one fr uni
     left: calc(50% + 11px);
     transform: translateX(-50%);
     width: 720px;
+  }
+
+  article dt {
+    font-size: 1em;
   }
 
   /* articles */
