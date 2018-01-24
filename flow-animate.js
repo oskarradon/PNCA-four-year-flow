@@ -1,7 +1,11 @@
 function animate() {
+
+
   let tl = new TimelineLite();
 
+
   // OBJECTS
+
 
   // SHAPES
 
@@ -30,6 +34,10 @@ function animate() {
   let titleThesis = document.querySelector( '.flow__title-thesis' );
 
   // ROWS
+
+  let rowOne = [
+    
+  ]
 
   // COLUMNS
 
