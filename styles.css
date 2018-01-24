@@ -61,7 +61,7 @@ body, html {
 
   background-color: var(--color-background);
   font-family: "DIN Next LT Pro";
-  height: 2000px;
+  min-height: 2000px;
   width: 100%;
 }
 
@@ -402,36 +402,45 @@ MEDIA QUERY
 
   .flow__text-layer {
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 3%;
+
     grid-auto-rows: minmax(10px, auto);
 
-    top: calc(99px + 10px);
+    top: calc(99px + 42px);
     left: calc(50% + 11px);
     transform: translateX(-50%);
-    width: 720px;
-  }
-
-  article dt {
-    font-size: 1em;
-  }
-
-  .flow__article-foundation dl dd, .flow__article-majors dl dd {
-    text-transform: uppercase;
+    width: 100%;
+    max-width: 900px;
   }
 
   /* articles */
-
-  .flow__article-explore > *, .flow__article-experiment > *, .flow__article-thesis > * {
-    opacity: 1;
-  }
 
   .flow__text-layer article {
     opacity: 0;
   }
 
+  .flow__text-layer article dl {
+    width: 100%;
+  }
+
+  .flow__text-layer article dl dt {
+    font-size: 1em;
+    margin-bottom: .2em;
+  }
+
+  .flow__article-explore > *, .flow__article-experiment > *, .flow__article-thesis > * {
+    opacity: 1;
+  }
+
+  .flow__article-foundation dl dd, .flow__article-majors dl dd, .flow__article-areas dl dd {
+    text-transform: uppercase;
+  }
+
   .flow__article-explore {
     grid-area: 1 / 1;
     align-self: end;
+    min-height: 304px;
   }
 
   .flow__article-explore h1, .flow__article-experiment h1 {
@@ -450,14 +459,17 @@ MEDIA QUERY
 
   .flow__article-year-one {
     grid-area: 3 / 1;
+    margin: 0px;
   }
 
   .flow__article-year-two {
     grid-area: 3 / 2;
+    margin: 0px;
   }
 
   .flow__article-year-four {
     grid-area: 3 / 4;
+    margin: 0px;
   }
 
   .flow__article-foundation {
@@ -466,6 +478,10 @@ MEDIA QUERY
 
   .flow__article-majors {
     grid-area: 4 / 2;
+  }
+
+  .flow__article-foundation, .flow__article-majors, .flow__article-majors dl.flow__list-title-minors, .flow__article-areas {
+    margin: 0px;
   }
 
   .flow__article-majors dl.flow__list-title-minors {
