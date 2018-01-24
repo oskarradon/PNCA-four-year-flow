@@ -32,11 +32,15 @@ function animate() {
 
   let titleFocus = document.querySelector( '.flow__title-focus' );
   let titleThesis = document.querySelector( '.flow__title-thesis' );
+  let titleExplore = document.querySelector( '.flow__article-explore h1' );
+  let titleExperiment = document.querySelector( '.flow__article-experiment h1' );
+  let titleFocus = document.querySelector( '.flow__article-focus h1' );
 
   // ROWS
 
   let rowOne = [
-    
+    articleYear,
+    articleYearOne
   ]
 
   // COLUMNS
