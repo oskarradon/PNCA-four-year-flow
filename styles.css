@@ -198,6 +198,10 @@ body, html {
   font-size: 1em;
 }
 
+.flow__text-layer article dl {
+  width: 100vw;
+}
+
 .flow__text-layer article dl dt {
   font-weight: bold;
   font-size: 1.8em;
@@ -205,6 +209,7 @@ body, html {
 
 .flow__text-layer article dl dd {
   -webkit-margin-start: 0px;
+  padding-bottom: .15em;
 }
 
 
