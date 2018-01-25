@@ -98,7 +98,6 @@ body, html {
   --text-color:                 #373737;
 
   position: relative;
-  overflow: hidden;
 
   background-color: var(--color-background);
   color: var(--text-color);
@@ -353,7 +352,9 @@ MEDIA QUERY
 
 
   .flow__container {
-    height: 1038px;
+    height: 1122px; /* unfortunately setting it explicitly here :( */
+
+    overflow: hidden;
   }
 
 
