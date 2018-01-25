@@ -72,6 +72,8 @@ must be present in the compiled stylesheet. */
 
 .flow__container p, .flow__container dd {
   font-family: "DIN W01 Regular";
+  letter-spacing: .025rem;
+  line-height:1.5;
 }
 
 
@@ -247,14 +249,13 @@ body, html {
 }
 
 .flow__text-layer article dl dt {
-  font-weight: bold;
+  font-family: "DIN W01 Bold";
   font-size: 1.8em;
   margin-bottom: .1em;
 }
 
 .flow__text-layer article dl dd {
   -webkit-margin-start: 0px;
-  padding-bottom: .15em;
 }
 
 .flow__text-layer article dl dd:last-of-type {
@@ -262,7 +263,7 @@ body, html {
 }
 
 .flow__text-layer article span {
-  font-weight: bold;
+  font-family: "DIN W01 Bold";
 }
 
 /*
@@ -410,7 +411,7 @@ MEDIA QUERY
   .flow__title-focus, .flow__title-thesis {
     font-size: 18px;
     font-weight: normal;
-    font-weight: bold;
+    font-family: "DIN W01 Bold";
     opacity: 0;
   }
 
