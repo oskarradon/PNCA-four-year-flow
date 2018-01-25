@@ -19,23 +19,54 @@ MEDIA QUERY
 /* FONTS */
 
 
-@font-face {
-  font-family: "DIN Next LT Pro";
-  font-weight: normal;
-  src: url("assets/fonts/DINNextLTPro-Regular.otf") format("otf");
+/* The comment below is a 'loud comment' (prefixed with a `/*!`) to make sure
+that it persists through minification, because this copyright message
+must be present in the compiled stylesheet. */
+
+/*! This CSS resource incorporates links to font software which is the valuable copyrighted property of Monotype and/or its suppliers. You may not attempt to copy, install, redistribute, convert, modify or reverse engineer this font software. Please contact Monotype with any questions regarding Web Fonts: http://www.fontshop.com */
+
+@font-face{
+  font-family:"DIN W01 Cond Black Italic";
+  src:url("assets/fonts/ff_din_cond_black_italic/ff_din_cond_black_italic.eot?#iefix");
+  src:url("assets/fonts/ff_din_cond_black_italic/ff_din_cond_black_italic.eot?#iefix") format("eot"),url("assets/fonts/ff_din_cond_black_italic/ff_din_cond_black_italic.woff2") format("woff2"),url("assets/fonts/ff_din_cond_black_italic/ff_din_cond_black_italic.woff") format("woff"),url("assets/fonts/ff_din_cond_black_italic/ff_din_cond_black_italic.ttf") format("truetype");
+}
+@font-face{
+  font-family:"DIN W01 Cond Black";
+  src:url("assets/fonts/ff_din_cond_black/ff_din_cond_black.eot?#iefix");
+  src:url("assets/fonts/ff_din_cond_black/ff_din_cond_black.eot?#iefix") format("eot"),url("assets/fonts/ff_din_cond_black/ff_din_cond_black.woff2") format("woff2"),url("assets/fonts/ff_din_cond_black/ff_din_cond_black.woff") format("woff"),url("assets/fonts/ff_din_cond_black/ff_din_cond_black.ttf") format("truetype");
+}
+@font-face{
+  font-family:"DIN W01 Bold";
+  src:url("assets/fonts/ff_din_bold/ff_din_bold.eot?#iefix");
+  src:url("assets/fonts/ff_din_bold/ff_din_bold.eot?#iefix") format("eot"),url("assets/fonts/ff_din_bold/ff_din_bold.woff2") format("woff2"),url("assets/fonts/ff_din_bold/ff_din_bold.woff") format("woff"),url("assets/fonts/ff_din_bold/ff_din_bold.ttf") format("truetype");
+}
+@font-face{
+  font-family:"DIN W01 Bold Italic";
+  src:url("assets/fonts/ff_din_bold_italic/ff_din_bold_italic.eot?#iefix");
+  src:url("assets/fonts/ff_din_bold_italic/ff_din_bold_italic.eot?#iefix") format("eot"),url("assets/fonts/ff_din_bold_italic/ff_din_bold_italic.woff2") format("woff2"),url("assets/fonts/ff_din_bold_italic/ff_din_bold_italic.woff") format("woff"),url("assets/fonts/ff_din_bold_italic/ff_din_bold_italic.ttf") format("truetype");
+}
+@font-face{
+  font-family:"DIN W01 Medium Italic";
+  src:url("assets/fonts/ff_din_medium_italic/ff_din_medium_italic.eot?#iefix");
+  src:url("assets/fonts/ff_din_medium_italic/ff_din_medium_italic.eot?#iefix") format("eot"),url("assets/fonts/ff_din_medium_italic/ff_din_medium_italic.woff2") format("woff2"),url("assets/fonts/ff_din_medium_italic/ff_din_medium_italic.woff") format("woff"),url("assets/fonts/ff_din_medium_italic/ff_din_medium_italic.ttf") format("truetype");
+}
+@font-face{
+  font-family:"DIN W01 Italic";
+  src:url("assets/fonts/ff_din_italic/ff_din_italic.eot?#iefix");
+  src:url("assets/fonts/ff_din_italic/ff_din_italic.eot?#iefix") format("eot"),url("assets/fonts/ff_din_italic/ff_din_italic.woff2") format("woff2"),url("assets/fonts/ff_din_italic/ff_din_italic.woff") format("woff"),url("assets/fonts/ff_din_italic/ff_din_italic.ttf") format("truetype");
+}
+@font-face{
+  font-family:"DIN W01 Medium";
+  src:url("assets/fonts/ff_din_medium/ff_din_medium.eot?#iefix");
+  src:url("assets/fonts/ff_din_medium/ff_din_medium.eot?#iefix") format("eot"),url("assets/fonts/ff_din_medium/ff_din_medium.woff2") format("woff2"),url("assets/fonts/ff_din_medium/ff_din_medium.woff") format("woff"),url("assets/fonts/ff_din_medium/ff_din_medium.ttf") format("truetype");
+}
+@font-face{
+  font-family:"DIN W01 Regular";
+  src:url("assets/fonts/ff_din_regular/ff_din_regular.eot?#iefix");
+  src:url("assets/fonts/ff_din_regular/ff_din_regular.eot?#iefix") format("eot"),url("assets/fonts/ff_din_regular/ff_din_regular.woff2") format("woff2"),url("assets/fonts/ff_din_regular/ff_din_regular.woff") format("woff"),url("assets/fonts/ff_din_regular/ff_din_regular.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "DIN Next LT Pro";
-  font-weight: bold;
-  src: url("assets/fonts/DINNextLTPro-Bold.otf") format("otf");
-}
 
-@font-face {
-  font-family: "DIN Next LT Pro";
-  font-weight: bolder;
-  src: url("assets/fonts/DINNextLTPro-Black.otf") format("otf");
-}
 
 body, html {
   padding: 0px;
