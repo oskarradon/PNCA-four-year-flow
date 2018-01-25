@@ -472,7 +472,7 @@ MEDIA QUERY
   }
 
   .flow__article-foundation dl dd, .flow__article-majors dl dd, .flow__article-areas dl dd {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
 
   .flow__article-explore {
