@@ -86,14 +86,17 @@ body, html {
   --color-blue:                 #00c0ff;
   --color-black:                black;
   --color-white:                white;
+  --text-color:                 #373737;
 
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 
   background-color: var(--color-background);
-  font-family: "DIN Next LT Pro";
-  min-height: 1100px;
+  font-family: "DIN W01 Medium";
+  color: var(--text-color);
+  height: 100%;
   width: 100%;
+  margin-bottom: 75px;
 }
 
 
