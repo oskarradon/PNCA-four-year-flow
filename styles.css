@@ -434,7 +434,7 @@ MEDIA QUERY
     height: 1px;
     width: 0px;
     background: var(--color-black);
-    top: 365px;
+    top: 418px;
     transform: translateY(-50%);
     z-index: -99;
   }
@@ -455,7 +455,7 @@ MEDIA QUERY
 
     grid-auto-rows: minmax(10px, auto);
 
-    top: calc(99px + 42px);
+    top: 90px;
     left: calc(50% + 11px);
     transform: translateX(-50%);
     width: 100%;
