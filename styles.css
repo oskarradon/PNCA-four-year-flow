@@ -401,7 +401,7 @@ MEDIA QUERY
   /* helper class */
 
   .flow__helper-line-width {
-    width: calc(60% + 170px);
+    width: calc(60% + 170px) !important; /*lol*/
   }
 
   /* TEXT LAYER-LG */

@@ -105,7 +105,7 @@ function animate() {
             TweenLite.to( white, 2, { left: 690 } ),
             TweenLite.to( black, 2, { left: 740 } ),
             TweenLite.to( line, 2, { left: 20, width: 720 } ),
-            line.classList.add("flow__helper-line-width"),
+            TweenLite.to( line, 0.5, { css:{ className:'+=flow__helper-line-width' } } ),
 
             new TimelineLite().staggerTo( columnOne, 2, { delay: 2, opacity: 1 }, .3 ),
 
