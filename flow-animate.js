@@ -89,9 +89,6 @@ function animate() {
 
   let width = window.innerWidth; // this is used to animate the elements differently based on the screen size
 
-  let blackCircleBoundingRect = black.getBoundingClientRect()
-  console.log(blackCircleBoundingRect.top, blackCircleBoundingRect.right, blackCircleBoundingRect.bottom, blackCircleBoundingRect.left );
-
   // ANIMATION
 
 
@@ -108,6 +105,7 @@ function animate() {
             TweenLite.to( white, 2, { left: 690 } ),
             TweenLite.to( black, 2, { left: 740 } ),
             TweenLite.to( line, 2, { left: 20, width: 720 } ),
+            line.classList.add("flow__helper-line-width"),
 
             new TimelineLite().staggerTo( columnOne, 2, { delay: 2, opacity: 1 }, .3 ),
 
@@ -119,11 +117,12 @@ function animate() {
           );
   }
 
+
 };
 
 setTimeout( () => { animate() }, 600 );
 
 
-// window.addEventListener( "resize", () => {
-//   let width = window.innerWidth;
-// });
+window.addEventListener( "resize", () => {
+  let width = window.innerWidth;
+});

@@ -398,6 +398,12 @@ MEDIA QUERY
     z-index: -99;
   }
 
+  /* helper class */
+
+  .flow__helper-line-width {
+    width: calc(60% + 170px);
+  }
+
   /* TEXT LAYER-LG */
 
 
