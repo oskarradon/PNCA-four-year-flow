@@ -66,6 +66,13 @@ must be present in the compiled stylesheet. */
   src:url("assets/fonts/ff_din_regular/ff_din_regular.eot?#iefix") format("eot"),url("assets/fonts/ff_din_regular/ff_din_regular.woff2") format("woff2"),url("assets/fonts/ff_din_regular/ff_din_regular.woff") format("woff"),url("assets/fonts/ff_din_regular/ff_din_regular.ttf") format("truetype");
 }
 
+.flow__container h1, .flow__container h2, .flow__container dt {
+  font-family: "DIN W01 Medium";
+}
+
+.flow__container p, .flow__container dd {
+  font-family: "DIN W01 Regular";
+}
 
 
 body, html {
@@ -92,7 +99,6 @@ body, html {
   overflow: hidden;
 
   background-color: var(--color-background);
-  font-family: "DIN W01 Medium";
   color: var(--text-color);
   height: 100%;
   width: 100%;
