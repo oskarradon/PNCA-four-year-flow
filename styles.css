@@ -81,8 +81,8 @@ body, html {
 
   /* variables */
 
-  --color-background:           #ECECEC;
-  --color-yellow:               yellow;
+  --color-background:           var(--color-white);
+  --color-yellow:               #fd0;
   --color-blue:                 #21C1FF;
   --color-black:                black;
   --color-white:                white;
