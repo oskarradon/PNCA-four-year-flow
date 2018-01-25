@@ -366,7 +366,7 @@ MEDIA QUERY
   .flow__shape-layer-inner {
     display: block;
     position: absolute;
-    height: 800px;
+    height: 858px;
     width: 920px;
     top: 50%;
     left: 50%;
@@ -433,7 +433,7 @@ MEDIA QUERY
     height: 1px;
     width: 0px;
     background: var(--color-black);
-    top: 336px;
+    top: 365px;
     transform: translateY(-50%);
     z-index: -99;
   }
