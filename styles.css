@@ -372,7 +372,7 @@ MEDIA QUERIES
 
 
   .flow__shape-layer {
-    top: 193px;
+    top: 85px;
   }
 
   .flow__shape-layer-inner {
@@ -445,7 +445,7 @@ MEDIA QUERIES
     height: 1px;
     width: 0px;
     background: var(--color-black);
-    top: 534px;
+    top: 516px;
     transform: translateY(-50%);
     z-index: -99;
   }
@@ -470,6 +470,7 @@ MEDIA QUERIES
     transform: translateX(-50%);
     width: 100%;
     max-width: 900px;
+    padding-top: 50px;
   }
 
   /* articles */
@@ -567,4 +568,13 @@ MEDIA QUERIES
   .flow__article-explore p {
     height: 336px;
   }
+
+  .flow__shape-layer {
+    top: 16px;
+  }
+
+  .flow__line {
+    top: 447px;
+  }
+
 }
