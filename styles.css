@@ -581,8 +581,17 @@ MEDIA QUERIES
   }
 }
 
-/* @media screen and (min-width: 460px) and (max-width: 767px) {
-  .flow__container {
-    margin-left: 10vw;
+@media screen and (min-width: 650px) and (max-width: 767px) {
+  .flow__text-layer {
+    grid-template-columns: 50px minmax(80px, 260px) 20px;
   }
-} */
+
+  .flow__article-areas {
+    position: absolute;
+    top: -796px;
+    left: 355px;
+  }
+  .flow__article-majors {
+    margin-bottom: 60px;
+  }
+}
