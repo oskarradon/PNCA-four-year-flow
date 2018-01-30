@@ -362,7 +362,7 @@ MEDIA QUERIES
 
 
   .flow__container {
-    height: 1122px; /* unfortunately setting it explicitly here :( */''
+    height: 1032px; /* unfortunately setting it explicitly here :( */''
 
     overflow: hidden;
   }
