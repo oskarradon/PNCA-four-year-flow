@@ -564,6 +564,9 @@ MEDIA QUERIES
     height: auto;
   }
 }
+
+/* This media query fixes the spacing issue for screen widths between 768 - 863px where the p element in the explore article would expand its height to make up for the shrinking grid column gap which would mess up the spacing of the flow__line and the shape layer. This is fixed by changing the explicitly set values for these elements. */
+
 @media screen and (min-width: 863px) {
   .flow__article-explore p {
     height: 336px;
