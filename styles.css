@@ -579,5 +579,10 @@ MEDIA QUERIES
   .flow__line {
     top: 447px;
   }
-
 }
+
+/* @media screen and (min-width: 460px) and (max-width: 767px) {
+  .flow__container {
+    margin-left: 10vw;
+  }
+} */
