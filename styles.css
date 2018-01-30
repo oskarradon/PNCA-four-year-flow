@@ -265,7 +265,7 @@ body, html {
 }
 
 .flow__text-layer article span {
-  font-family: "DIN W01 Bold";
+  font-weight: bold;
 }
 
 /*
@@ -477,7 +477,7 @@ MEDIA QUERY
   }
 
   .flow__text-layer article dl dt {
-    font-size: 1em;
+    font-size: 18px;
     margin-bottom: .2em;
   }
 
