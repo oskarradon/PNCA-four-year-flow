@@ -196,8 +196,9 @@ body, html {
 
 /* focus and thesis titles */
 
-.flow__title-focus, .flow__title-thesis {
+.flow__container h2.flow__title-focus, .flow__container h2.flow__title-thesis {
   opacity: 0;
+  font-size: 18px;
 }
 
 /* other objects */
