@@ -581,6 +581,8 @@ MEDIA QUERIES
   }
 }
 
+/* This media query accomplishes a quasi-two column layout for the text below the circles on small - medium screen sizes. */
+
 @media screen and (min-width: 650px) and (max-width: 767px) {
   .flow__text-layer {
     grid-template-columns: 50px minmax(80px, 260px) 20px;
