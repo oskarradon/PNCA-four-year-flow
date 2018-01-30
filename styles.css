@@ -68,12 +68,14 @@ must be present in the compiled stylesheet. */
 
 .flow__container h1, .flow__container h2, .flow__container dt {
   font-family: "DIN W01 Medium";
+  font-size: 24px;
 }
 
 .flow__container p, .flow__container dd {
-  font-family: "DIN W01 Regular";
-  letter-spacing: .025rem;
-  line-height:1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  letter-spacing: .45;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 
@@ -352,7 +354,7 @@ MEDIA QUERY
 
 
   .flow__container {
-    height: 1122px; /* unfortunately setting it explicitly here :( */
+    height: 1122px; /* unfortunately setting it explicitly here :( */''
 
     overflow: hidden;
   }
