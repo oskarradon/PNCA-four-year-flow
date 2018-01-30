@@ -94,9 +94,9 @@ function animate() {
 
   if ( width < 768 ) {
     tl.add( TweenLite.to( blue, 2, { top: 250 } ),
-            TweenLite.to( white, 2, { top: 458 } ),
-            TweenLite.to( black, 2, { top: 508 } ),
-            TweenLite.to( line, 2, { top: 23, height: 490 } ),
+            TweenLite.to( white, 2, { top: 558 } ),
+            TweenLite.to( black, 2, { top: 608 } ),
+            TweenLite.to( line, 2, { top: 23, height: 590 } ),
 
             new TimelineLite().staggerTo( rows, 2, { delay: 2, opacity: 1 }, .3 )
           );
