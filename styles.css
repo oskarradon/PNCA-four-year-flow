@@ -344,9 +344,16 @@ article dl dt {
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-MEDIA QUERY
+MEDIA QUERIES
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+
+/* @media screen and (min-width: 863) {
+  .flow__text-layer {
+    grid-column-gap: 2%;
+    background: blue;
+  }
+} */
 
 @media screen and (min-width: 768px) {
 
@@ -365,7 +372,7 @@ MEDIA QUERY
 
 
   .flow__shape-layer {
-    top: 75px;
+    top: 193px;
   }
 
   .flow__shape-layer-inner {
@@ -438,7 +445,7 @@ MEDIA QUERY
     height: 1px;
     width: 0px;
     background: var(--color-black);
-    top: 418px;
+    top: 534px;
     transform: translateY(-50%);
     z-index: -99;
   }
@@ -459,7 +466,6 @@ MEDIA QUERY
 
     grid-auto-rows: minmax(10px, auto);
 
-    top: 90px;
     left: calc(50% + 11px);
     transform: translateX(-50%);
     width: 100%;
@@ -547,5 +553,18 @@ MEDIA QUERY
   .flow__article-thesis {
     grid-area: 4 / 4  ;
     margin-top: 30px;
+  }
+
+  .flow__article-explore p {
+    height: 405px;
+  }
+
+  .flow__article-experiment p {
+    height: auto;
+  }
+}
+@media screen and (min-width: 863px) {
+  .flow__article-explore p {
+    height: 336px;
   }
 }
